@@ -1,0 +1,7 @@
+# Documents internes : jamais publiés
+CONTENU.md
+charte.html
+assets/_*.txt
+# Fichiers système
+Thumbs.db
+.DS_Store
