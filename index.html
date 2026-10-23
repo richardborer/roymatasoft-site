@@ -3,15 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow"><!-- brouillon : retirer cette ligne à la mise en ligne définitive -->
 <title>Roymata Soft — La technologie évolue. L'expérience reste essentielle.</title>
 <meta name="description" content="Roymata Soft crée ses propres applications et accompagne les entreprises dans leurs projets technologiques : développement sur mesure, intégration de l'IA, conseil. 25 ans d'expérience en ingénierie logicielle.">
 <meta property="og:title" content="Roymata Soft">
 <meta property="og:description" content="Édition de logiciels, solutions sur mesure et conseil. Nous partons du besoin, pas de la technologie.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://roymatasoft.com/">
+<meta name="robots" content="noindex, nofollow"><!-- brouillon : retirer cette ligne à la mise en ligne définitive -->
 <link rel="icon" href="assets/monogramme-noir.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
 <link rel="icon" href="assets/monogramme-blanc.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+<script>
+  (function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 <style>
 @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/inter-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/inter-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
@@ -26,253 +29,238 @@
 @font-face{font-family:'Jost';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/jost-700-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:'Jost';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/jost-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 </style>
-<script>
-  (function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
-</script>
 <style>
-  /* ===== Charte Roymata Soft : jetons ===== */
+  /* ===== Charte Roymata Soft v2 (23 oct. 2026) : papier chaud, encre, bronze ===== */
   :root{
     --logo-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='52 445 1151 333'%3E%3Cpath fill='black' fill-rule='evenodd' d='M 996 713 L 995 714 L 993 714 L 992 715 L 990 715 L 988 717 L 987 717 L 982 722 L 982 723 L 980 725 L 980 727 L 979 728 L 979 731 L 978 732 L 978 739 L 979 740 L 979 743 L 980 744 L 980 746 L 981 747 L 981 748 L 984 751 L 984 752 L 985 752 L 988 755 L 989 755 L 992 757 L 994 757 L 995 758 L 1006 758 L 1007 757 L 1009 757 L 1010 756 L 1012 756 L 1013 755 L 1014 755 L 1020 749 L 1020 748 L 1022 746 L 1022 744 L 1023 743 L 1023 741 L 1024 740 L 1024 731 L 1023 730 L 1023 728 L 1022 727 L 1022 725 L 1020 723 L 1020 722 L 1015 717 L 1014 717 L 1009 714 L 1006 714 L 1005 713 Z M 1001 720 L 1002 721 L 1006 721 L 1008 723 L 1009 723 L 1013 727 L 1013 728 L 1015 731 L 1015 740 L 1014 741 L 1013 744 L 1008 749 L 1007 749 L 1006 750 L 1004 750 L 1003 751 L 999 751 L 998 750 L 996 750 L 995 749 L 994 749 L 992 747 L 991 747 L 990 746 L 990 745 L 988 743 L 988 742 L 987 741 L 987 730 L 988 729 L 988 728 L 994 722 L 995 722 L 996 721 L 1000 721 Z M 1156 701 L 1156 713 L 1155 714 L 1149 714 L 1149 721 L 1155 721 L 1156 722 L 1156 748 L 1157 749 L 1157 751 L 1159 753 L 1159 754 L 1160 755 L 1161 755 L 1163 757 L 1165 757 L 1166 758 L 1176 758 L 1177 757 L 1179 757 L 1179 755 L 1178 754 L 1178 750 L 1175 750 L 1174 751 L 1172 751 L 1171 750 L 1168 750 L 1165 747 L 1165 746 L 1164 745 L 1164 723 L 1166 721 L 1178 721 L 1178 714 L 1166 714 L 1164 712 L 1164 701 Z M 902 694 L 901 695 L 898 695 L 897 696 L 896 696 L 894 698 L 893 698 L 890 701 L 890 702 L 888 705 L 888 707 L 887 708 L 887 713 L 888 714 L 888 717 L 889 718 L 889 719 L 894 724 L 897 725 L 899 727 L 901 727 L 902 728 L 903 728 L 906 730 L 908 730 L 909 731 L 910 731 L 912 733 L 913 733 L 915 735 L 915 736 L 917 739 L 917 743 L 916 744 L 916 745 L 911 750 L 908 750 L 907 751 L 904 751 L 903 750 L 900 750 L 899 749 L 896 748 L 891 743 L 890 743 L 884 749 L 887 752 L 888 752 L 893 756 L 895 756 L 896 757 L 898 757 L 899 758 L 911 758 L 912 757 L 915 757 L 916 756 L 917 756 L 919 754 L 920 754 L 924 749 L 924 747 L 925 746 L 925 743 L 926 742 L 926 739 L 925 738 L 925 734 L 924 733 L 924 732 L 922 730 L 922 729 L 920 727 L 919 727 L 917 725 L 916 725 L 915 724 L 914 724 L 909 721 L 907 721 L 906 720 L 905 720 L 904 719 L 901 718 L 896 713 L 896 708 L 897 707 L 897 706 L 899 704 L 900 704 L 903 702 L 909 702 L 910 703 L 912 703 L 914 705 L 915 705 L 918 708 L 919 708 L 921 706 L 921 705 L 924 702 L 920 698 L 919 698 L 914 695 L 911 695 L 910 694 Z M 1101 693 L 1097 693 L 1096 692 L 1092 692 L 1091 693 L 1088 693 L 1087 694 L 1086 694 L 1081 699 L 1081 700 L 1080 701 L 1080 704 L 1079 705 L 1079 713 L 1078 714 L 1073 714 L 1073 721 L 1078 721 L 1079 722 L 1079 756 L 1080 757 L 1088 757 L 1088 722 L 1089 721 L 1099 721 L 1099 714 L 1089 714 L 1088 713 L 1088 705 L 1089 704 L 1089 703 L 1091 701 L 1092 701 L 1093 700 L 1098 700 L 1099 701 L 1100 701 L 1100 698 L 1101 697 Z M 577 526 L 577 669 L 613 669 L 613 582 L 614 581 L 614 578 L 615 577 L 615 575 L 616 574 L 617 571 L 624 564 L 625 564 L 628 562 L 630 562 L 631 561 L 642 561 L 643 562 L 645 562 L 646 563 L 649 564 L 654 568 L 654 569 L 656 571 L 656 572 L 659 577 L 659 582 L 660 583 L 660 669 L 695 669 L 696 668 L 696 580 L 697 579 L 697 576 L 698 575 L 699 572 L 701 570 L 701 569 L 704 566 L 705 566 L 707 564 L 708 564 L 713 561 L 725 561 L 726 562 L 728 562 L 729 563 L 732 564 L 739 571 L 739 572 L 741 575 L 741 577 L 742 578 L 742 668 L 743 669 L 778 669 L 779 668 L 779 569 L 778 568 L 778 563 L 777 562 L 777 559 L 776 558 L 776 556 L 775 555 L 775 554 L 774 553 L 774 552 L 773 551 L 772 548 L 770 546 L 770 545 L 762 537 L 761 537 L 758 534 L 757 534 L 756 533 L 755 533 L 754 532 L 753 532 L 748 529 L 746 529 L 745 528 L 741 528 L 740 527 L 735 527 L 734 526 L 722 526 L 721 527 L 716 527 L 715 528 L 712 528 L 711 529 L 709 529 L 708 530 L 706 530 L 705 531 L 704 531 L 703 532 L 702 532 L 701 533 L 698 534 L 696 536 L 695 536 L 692 539 L 691 539 L 686 544 L 678 536 L 677 536 L 672 532 L 671 532 L 670 531 L 668 531 L 667 530 L 666 530 L 665 529 L 663 529 L 662 528 L 659 528 L 658 527 L 653 527 L 652 526 L 639 526 L 638 527 L 634 527 L 633 528 L 630 528 L 627 530 L 625 530 L 624 531 L 621 532 L 619 534 L 618 534 L 614 538 L 613 537 L 613 526 Z M 574 526 L 537 526 L 535 528 L 535 529 L 534 530 L 534 532 L 533 533 L 533 534 L 531 537 L 531 539 L 529 542 L 529 544 L 528 545 L 528 546 L 526 549 L 526 551 L 524 554 L 524 556 L 521 561 L 521 563 L 518 568 L 518 570 L 517 571 L 517 572 L 515 575 L 515 577 L 512 582 L 512 584 L 510 587 L 510 589 L 509 590 L 509 591 L 507 594 L 507 596 L 504 601 L 504 603 L 502 606 L 502 608 L 500 610 L 498 608 L 498 606 L 496 603 L 496 601 L 495 600 L 495 598 L 493 595 L 493 593 L 492 592 L 492 591 L 491 590 L 491 588 L 489 585 L 489 583 L 488 582 L 488 580 L 486 577 L 486 575 L 485 574 L 485 572 L 482 567 L 482 565 L 481 564 L 481 563 L 480 562 L 480 560 L 478 557 L 478 555 L 477 554 L 477 552 L 475 549 L 475 547 L 473 544 L 473 542 L 472 541 L 472 539 L 470 536 L 470 534 L 468 531 L 468 529 L 467 528 L 467 527 L 466 526 L 428 526 L 428 527 L 429 528 L 429 530 L 431 533 L 431 535 L 433 538 L 433 540 L 436 545 L 436 547 L 438 550 L 438 552 L 439 553 L 439 554 L 440 555 L 440 557 L 442 560 L 442 562 L 444 565 L 444 567 L 445 568 L 445 569 L 447 572 L 447 574 L 450 579 L 450 581 L 452 584 L 452 586 L 454 589 L 454 591 L 457 596 L 457 598 L 459 601 L 459 603 L 460 604 L 460 605 L 462 608 L 462 610 L 465 615 L 465 617 L 467 620 L 467 622 L 469 625 L 469 627 L 471 630 L 471 632 L 473 635 L 473 637 L 475 640 L 475 642 L 478 647 L 478 649 L 479 650 L 479 651 L 480 652 L 480 654 L 481 655 L 481 656 L 479 658 L 479 659 L 478 660 L 477 663 L 475 665 L 475 666 L 474 667 L 474 668 L 473 669 L 473 670 L 472 671 L 472 672 L 471 673 L 471 674 L 470 675 L 470 676 L 469 677 L 468 680 L 466 682 L 466 683 L 465 684 L 465 685 L 464 686 L 464 687 L 463 688 L 463 689 L 462 690 L 462 691 L 461 692 L 461 693 L 460 694 L 460 695 L 459 696 L 459 697 L 458 698 L 458 699 L 457 700 L 456 703 L 454 705 L 454 706 L 453 707 L 453 708 L 452 709 L 452 710 L 451 711 L 451 712 L 450 713 L 450 714 L 449 715 L 449 716 L 448 717 L 448 718 L 447 719 L 446 722 L 444 724 L 444 725 L 443 726 L 443 728 L 440 733 L 483 733 L 483 732 L 484 731 L 484 730 L 485 729 L 485 728 L 488 723 L 488 721 L 489 720 L 489 719 L 490 718 L 490 717 L 491 716 L 491 715 L 494 710 L 494 708 L 495 707 L 495 706 L 496 705 L 496 704 L 497 703 L 497 702 L 498 701 L 498 700 L 499 699 L 499 698 L 500 697 L 500 696 L 501 695 L 501 694 L 502 693 L 502 692 L 505 687 L 505 685 L 506 684 L 506 683 L 507 682 L 507 681 L 508 680 L 508 679 L 509 678 L 509 677 L 510 676 L 510 675 L 511 674 L 511 673 L 512 672 L 512 671 L 515 666 L 515 664 L 516 663 L 516 662 L 519 657 L 519 655 L 522 650 L 522 648 L 523 647 L 523 646 L 525 643 L 525 641 L 528 636 L 528 634 L 530 631 L 530 629 L 531 628 L 531 627 L 534 622 L 534 620 L 537 615 L 537 613 L 539 610 L 539 608 L 540 607 L 540 606 L 543 601 L 543 599 L 545 596 L 545 594 L 546 593 L 546 592 L 549 587 L 549 585 L 552 580 L 552 578 L 555 573 L 555 571 L 558 566 L 558 564 L 561 559 L 561 557 L 564 552 L 564 550 L 565 549 L 565 548 L 566 547 L 566 546 L 569 541 L 569 539 L 571 536 L 571 534 L 572 533 L 572 532 L 575 527 Z M 1044 548 L 1044 549 L 1041 552 L 1041 553 L 1039 555 L 1038 558 L 1036 560 L 1036 561 L 1033 566 L 1033 568 L 1031 571 L 1031 573 L 1030 574 L 1030 576 L 1029 577 L 1029 581 L 1028 582 L 1028 587 L 1027 588 L 1027 606 L 1028 607 L 1028 611 L 1029 612 L 1029 615 L 1030 616 L 1030 618 L 1031 619 L 1031 621 L 1032 622 L 1032 624 L 1033 625 L 1033 626 L 1034 627 L 1034 628 L 1035 629 L 1035 630 L 1036 631 L 1037 634 L 1039 636 L 1039 637 L 1041 639 L 1041 640 L 1044 643 L 1044 644 L 1054 654 L 1055 654 L 1058 657 L 1059 657 L 1064 661 L 1065 661 L 1066 662 L 1067 662 L 1068 663 L 1069 663 L 1070 664 L 1071 664 L 1076 667 L 1078 667 L 1079 668 L 1081 668 L 1082 669 L 1085 669 L 1086 670 L 1090 670 L 1091 671 L 1113 671 L 1114 670 L 1117 670 L 1118 669 L 1121 669 L 1122 668 L 1124 668 L 1125 667 L 1126 667 L 1127 666 L 1128 666 L 1129 665 L 1130 665 L 1131 664 L 1134 663 L 1136 661 L 1137 661 L 1139 659 L 1140 659 L 1144 655 L 1145 655 L 1146 656 L 1146 669 L 1183 669 L 1183 527 L 1182 526 L 1146 526 L 1146 539 L 1145 540 L 1146 541 L 1144 543 L 1139 538 L 1138 538 L 1133 534 L 1132 534 L 1131 533 L 1130 533 L 1129 532 L 1128 532 L 1123 529 L 1121 529 L 1120 528 L 1118 528 L 1117 527 L 1115 527 L 1114 526 L 1110 526 L 1109 525 L 1104 525 L 1103 524 L 1090 524 L 1089 525 L 1083 525 L 1082 526 L 1079 526 L 1078 527 L 1075 527 L 1074 528 L 1072 528 L 1071 529 L 1070 529 L 1069 530 L 1068 530 L 1067 531 L 1066 531 L 1065 532 L 1064 532 L 1063 533 L 1060 534 L 1058 536 L 1057 536 L 1055 538 L 1054 538 Z M 1094 558 L 1111 558 L 1112 559 L 1114 559 L 1115 560 L 1117 560 L 1118 561 L 1119 561 L 1120 562 L 1123 563 L 1125 565 L 1126 565 L 1130 569 L 1131 569 L 1133 571 L 1133 572 L 1137 576 L 1137 577 L 1139 579 L 1139 580 L 1141 583 L 1141 585 L 1142 586 L 1142 588 L 1143 589 L 1143 593 L 1144 594 L 1144 600 L 1143 601 L 1143 605 L 1142 606 L 1142 608 L 1141 609 L 1141 611 L 1140 612 L 1140 613 L 1138 615 L 1138 616 L 1136 618 L 1136 619 L 1128 627 L 1127 627 L 1122 631 L 1121 631 L 1118 633 L 1116 633 L 1115 634 L 1113 634 L 1112 635 L 1108 635 L 1107 636 L 1099 636 L 1098 635 L 1094 635 L 1093 634 L 1090 634 L 1089 633 L 1088 633 L 1087 632 L 1086 632 L 1085 631 L 1082 630 L 1080 628 L 1079 628 L 1069 618 L 1068 615 L 1066 613 L 1066 611 L 1064 608 L 1064 605 L 1063 604 L 1063 599 L 1062 598 L 1062 596 L 1063 595 L 1063 589 L 1064 588 L 1064 586 L 1065 585 L 1065 583 L 1066 582 L 1066 581 L 1067 580 L 1068 577 L 1070 575 L 1070 574 L 1080 564 L 1081 564 L 1082 563 L 1083 563 L 1088 560 L 1090 560 L 1091 559 L 1093 559 Z M 803 548 L 803 549 L 800 552 L 800 553 L 796 558 L 796 559 L 795 560 L 795 561 L 794 562 L 794 563 L 791 568 L 791 570 L 790 571 L 790 573 L 789 574 L 789 576 L 788 577 L 788 580 L 787 581 L 787 586 L 786 587 L 786 608 L 787 609 L 787 613 L 788 614 L 788 617 L 789 618 L 789 620 L 790 621 L 790 623 L 791 624 L 791 626 L 792 627 L 792 628 L 793 629 L 793 630 L 794 631 L 794 632 L 795 633 L 796 636 L 798 638 L 798 639 L 800 641 L 800 642 L 804 646 L 804 647 L 812 655 L 813 655 L 816 658 L 817 658 L 819 660 L 822 661 L 824 663 L 825 663 L 828 665 L 830 665 L 833 667 L 835 667 L 836 668 L 838 668 L 839 669 L 841 669 L 842 670 L 847 670 L 848 671 L 859 671 L 860 672 L 861 672 L 862 671 L 872 671 L 873 670 L 877 670 L 878 669 L 881 669 L 884 667 L 886 667 L 887 666 L 888 666 L 889 665 L 890 665 L 891 664 L 894 663 L 896 661 L 897 661 L 899 659 L 900 659 L 903 656 L 904 657 L 904 668 L 905 669 L 941 669 L 941 526 L 905 526 L 904 527 L 904 539 L 903 540 L 902 540 L 899 537 L 898 537 L 896 535 L 895 535 L 894 534 L 893 534 L 892 533 L 891 533 L 890 532 L 889 532 L 884 529 L 882 529 L 881 528 L 879 528 L 878 527 L 876 527 L 875 526 L 871 526 L 870 525 L 864 525 L 863 524 L 849 524 L 848 525 L 842 525 L 841 526 L 838 526 L 837 527 L 835 527 L 834 528 L 832 528 L 831 529 L 829 529 L 828 530 L 827 530 L 826 531 L 825 531 L 824 532 L 821 533 L 819 535 L 818 535 L 816 537 L 815 537 L 812 540 L 811 540 Z M 853 558 L 869 558 L 870 559 L 872 559 L 873 560 L 875 560 L 876 561 L 878 561 L 879 562 L 880 562 L 882 564 L 883 564 L 885 566 L 886 566 L 894 574 L 894 575 L 897 578 L 897 579 L 900 584 L 900 586 L 901 587 L 901 590 L 902 591 L 902 603 L 901 604 L 901 607 L 900 608 L 900 610 L 899 611 L 898 614 L 896 616 L 896 617 L 894 619 L 894 620 L 888 626 L 887 626 L 884 629 L 883 629 L 881 631 L 880 631 L 879 632 L 877 632 L 876 633 L 875 633 L 874 634 L 872 634 L 871 635 L 866 635 L 865 636 L 857 636 L 856 635 L 852 635 L 851 634 L 849 634 L 846 632 L 844 632 L 843 631 L 842 631 L 840 629 L 839 629 L 836 626 L 835 626 L 831 622 L 831 621 L 828 618 L 828 617 L 826 615 L 826 614 L 824 611 L 824 609 L 823 608 L 823 605 L 822 604 L 822 599 L 821 598 L 821 596 L 822 595 L 822 589 L 823 588 L 823 586 L 824 585 L 824 583 L 825 582 L 825 581 L 826 580 L 827 577 L 829 575 L 829 574 L 838 565 L 839 565 L 841 563 L 842 563 L 847 560 L 849 560 L 850 559 L 852 559 Z M 954 485 L 954 621 L 955 622 L 955 626 L 956 627 L 956 630 L 957 631 L 957 633 L 959 636 L 959 638 L 960 639 L 961 642 L 963 644 L 963 645 L 966 648 L 966 649 L 973 656 L 974 656 L 977 659 L 978 659 L 979 660 L 980 660 L 981 661 L 982 661 L 983 662 L 984 662 L 989 665 L 991 665 L 992 666 L 995 666 L 996 667 L 999 667 L 1000 668 L 1009 668 L 1010 669 L 1025 669 L 1026 668 L 1026 636 L 1010 636 L 1009 635 L 1006 635 L 1005 634 L 1004 634 L 1003 633 L 1000 632 L 994 626 L 994 625 L 992 622 L 992 620 L 991 619 L 991 559 L 992 558 L 1026 558 L 1026 527 L 1025 526 L 992 526 L 991 525 L 991 485 Z M 357 467 L 351 467 L 350 466 L 335 466 L 334 467 L 326 467 L 325 468 L 320 468 L 319 469 L 316 469 L 315 470 L 312 470 L 311 471 L 309 471 L 308 472 L 306 472 L 305 473 L 303 473 L 302 474 L 300 474 L 297 476 L 295 476 L 294 477 L 293 477 L 292 478 L 291 478 L 290 479 L 289 479 L 288 480 L 285 481 L 283 483 L 280 484 L 278 486 L 277 486 L 275 488 L 274 488 L 271 491 L 270 491 L 267 494 L 266 494 L 253 507 L 253 508 L 249 512 L 249 513 L 246 516 L 246 517 L 242 522 L 242 523 L 241 524 L 241 525 L 240 526 L 240 527 L 239 528 L 239 529 L 238 530 L 238 531 L 237 532 L 237 533 L 234 538 L 234 540 L 233 541 L 233 543 L 232 544 L 232 546 L 231 547 L 231 549 L 230 550 L 230 552 L 229 553 L 229 556 L 228 557 L 228 562 L 227 563 L 227 570 L 226 571 L 226 590 L 227 591 L 227 597 L 228 598 L 228 603 L 229 604 L 229 607 L 230 608 L 230 610 L 231 611 L 231 613 L 232 614 L 232 616 L 233 617 L 233 619 L 235 622 L 235 624 L 236 625 L 236 626 L 237 627 L 237 628 L 238 629 L 239 632 L 241 634 L 241 635 L 242 636 L 242 637 L 244 639 L 244 640 L 247 643 L 247 644 L 251 648 L 251 649 L 261 659 L 262 659 L 266 663 L 267 663 L 270 666 L 271 666 L 273 668 L 276 669 L 278 671 L 279 671 L 280 672 L 281 672 L 282 673 L 283 673 L 284 674 L 285 674 L 290 677 L 292 677 L 293 678 L 295 678 L 296 679 L 298 679 L 299 680 L 301 680 L 302 681 L 306 681 L 307 682 L 311 682 L 312 683 L 320 683 L 321 684 L 337 684 L 338 683 L 345 683 L 346 682 L 350 682 L 351 681 L 354 681 L 355 680 L 358 680 L 359 679 L 361 679 L 362 678 L 364 678 L 367 676 L 369 676 L 370 675 L 371 675 L 372 674 L 373 674 L 374 673 L 377 672 L 379 670 L 382 669 L 384 667 L 385 667 L 387 665 L 388 665 L 391 662 L 392 662 L 407 647 L 407 646 L 410 643 L 410 642 L 413 639 L 414 636 L 416 634 L 416 633 L 417 632 L 417 631 L 418 630 L 418 629 L 419 628 L 419 627 L 422 622 L 422 620 L 423 619 L 423 617 L 425 614 L 425 611 L 426 610 L 426 607 L 427 606 L 427 603 L 428 602 L 428 598 L 429 597 L 429 588 L 430 587 L 430 577 L 429 576 L 429 568 L 428 567 L 428 563 L 427 562 L 427 558 L 426 557 L 426 555 L 425 554 L 425 551 L 424 550 L 424 548 L 421 543 L 421 541 L 419 539 L 418 536 L 416 534 L 416 533 L 414 531 L 414 530 L 411 527 L 411 526 L 405 520 L 404 520 L 400 516 L 399 516 L 394 512 L 393 512 L 392 511 L 391 511 L 390 510 L 389 510 L 388 509 L 387 509 L 382 506 L 380 506 L 379 505 L 377 505 L 376 504 L 373 504 L 372 503 L 369 503 L 368 502 L 363 502 L 362 501 L 344 501 L 343 502 L 338 502 L 337 503 L 334 503 L 333 504 L 331 504 L 330 505 L 328 505 L 327 506 L 326 506 L 325 507 L 324 507 L 323 508 L 322 508 L 321 509 L 320 509 L 319 510 L 316 511 L 314 513 L 313 513 L 310 516 L 309 516 L 300 525 L 300 526 L 297 529 L 297 530 L 295 532 L 295 533 L 293 536 L 296 535 L 298 533 L 301 532 L 303 530 L 304 530 L 305 529 L 306 529 L 311 526 L 313 526 L 316 524 L 319 524 L 320 523 L 323 523 L 324 522 L 343 522 L 344 523 L 348 523 L 349 524 L 351 524 L 352 525 L 354 525 L 355 526 L 356 526 L 357 527 L 358 527 L 359 528 L 360 528 L 361 529 L 364 530 L 366 532 L 367 532 L 379 544 L 379 545 L 382 548 L 382 549 L 383 550 L 383 551 L 384 552 L 384 553 L 387 558 L 387 560 L 388 561 L 388 564 L 389 565 L 389 568 L 390 569 L 390 574 L 391 575 L 391 582 L 390 583 L 390 589 L 389 590 L 389 593 L 388 594 L 388 597 L 387 598 L 387 600 L 386 601 L 386 602 L 385 603 L 385 604 L 384 605 L 384 606 L 383 607 L 382 610 L 380 612 L 380 613 L 378 615 L 378 616 L 367 627 L 366 627 L 363 630 L 362 630 L 360 632 L 359 632 L 358 633 L 357 633 L 352 636 L 350 636 L 349 637 L 347 637 L 346 638 L 342 638 L 341 639 L 335 639 L 334 640 L 325 640 L 324 639 L 318 639 L 317 638 L 314 638 L 313 637 L 310 637 L 309 636 L 307 636 L 306 635 L 305 635 L 304 634 L 303 634 L 302 633 L 301 633 L 300 632 L 299 632 L 298 631 L 295 630 L 293 628 L 292 628 L 289 625 L 288 625 L 276 613 L 276 612 L 273 609 L 273 608 L 271 606 L 271 605 L 270 604 L 270 603 L 269 602 L 269 601 L 268 600 L 268 599 L 265 594 L 265 592 L 264 591 L 264 588 L 263 587 L 263 584 L 262 583 L 262 577 L 261 576 L 261 563 L 262 562 L 262 556 L 263 555 L 263 551 L 264 550 L 264 547 L 265 546 L 265 544 L 266 543 L 266 541 L 267 540 L 267 539 L 268 538 L 268 536 L 269 535 L 269 534 L 270 533 L 270 532 L 271 531 L 271 530 L 272 529 L 273 526 L 275 524 L 276 521 L 279 518 L 279 517 L 282 514 L 282 513 L 288 507 L 288 506 L 293 501 L 294 501 L 300 495 L 301 495 L 308 489 L 309 489 L 314 485 L 317 484 L 319 482 L 320 482 L 321 481 L 322 481 L 323 480 L 324 480 L 325 479 L 326 479 L 327 478 L 328 478 L 333 475 L 335 475 L 336 474 L 337 474 L 338 473 L 340 473 L 343 471 L 345 471 L 346 470 L 348 470 L 349 469 L 351 469 L 352 468 L 355 468 L 356 467 Z M 73 465 L 72 466 L 72 668 L 73 669 L 109 669 L 110 668 L 110 498 L 111 497 L 157 497 L 158 498 L 160 498 L 161 499 L 163 499 L 164 500 L 167 501 L 170 504 L 171 504 L 176 509 L 176 510 L 179 513 L 179 514 L 180 515 L 180 516 L 183 521 L 183 524 L 184 525 L 184 531 L 185 532 L 185 534 L 184 535 L 184 541 L 183 542 L 183 545 L 181 548 L 181 550 L 179 552 L 178 555 L 174 559 L 174 560 L 173 561 L 172 561 L 168 565 L 167 565 L 165 567 L 164 567 L 163 568 L 161 568 L 160 569 L 158 569 L 157 570 L 153 570 L 152 571 L 112 571 L 115 574 L 115 575 L 120 580 L 120 581 L 125 586 L 125 587 L 129 591 L 129 592 L 133 596 L 133 597 L 137 601 L 137 602 L 142 607 L 142 608 L 145 611 L 145 612 L 149 616 L 149 617 L 152 620 L 152 621 L 157 626 L 157 627 L 160 630 L 160 631 L 164 635 L 164 636 L 172 645 L 172 646 L 175 649 L 175 650 L 179 654 L 179 655 L 182 658 L 182 659 L 186 663 L 186 664 L 189 667 L 189 668 L 190 669 L 236 669 L 236 668 L 234 666 L 234 665 L 230 661 L 230 660 L 226 656 L 226 655 L 222 651 L 222 650 L 218 646 L 218 645 L 214 641 L 214 640 L 210 636 L 210 635 L 206 631 L 206 630 L 202 626 L 202 625 L 198 621 L 198 620 L 194 616 L 194 615 L 190 611 L 190 610 L 186 606 L 186 605 L 182 601 L 182 600 L 179 597 L 179 596 L 180 595 L 181 595 L 182 594 L 184 594 L 185 593 L 186 593 L 187 592 L 190 591 L 192 589 L 193 589 L 196 586 L 197 586 L 209 574 L 209 573 L 213 568 L 213 567 L 214 566 L 214 565 L 215 564 L 215 563 L 218 558 L 218 556 L 219 555 L 219 553 L 220 552 L 220 549 L 221 548 L 221 543 L 222 542 L 222 523 L 221 522 L 221 517 L 220 516 L 220 513 L 219 512 L 219 510 L 218 509 L 218 507 L 217 506 L 217 505 L 216 504 L 216 503 L 215 502 L 215 501 L 214 500 L 213 497 L 211 495 L 211 494 L 209 492 L 209 491 L 198 480 L 197 480 L 195 478 L 194 478 L 189 474 L 188 474 L 183 471 L 181 471 L 180 470 L 178 470 L 177 469 L 175 469 L 174 468 L 172 468 L 171 467 L 167 467 L 166 466 L 159 466 L 158 465 Z'/%3E%3C/svg%3E");
     --mono-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='214 454 228 242'%3E%3Cpath fill='black' fill-rule='evenodd' d='M 357 467 L 351 467 L 350 466 L 335 466 L 334 467 L 326 467 L 325 468 L 320 468 L 319 469 L 316 469 L 315 470 L 312 470 L 311 471 L 309 471 L 308 472 L 306 472 L 305 473 L 303 473 L 302 474 L 300 474 L 297 476 L 295 476 L 294 477 L 293 477 L 292 478 L 291 478 L 290 479 L 289 479 L 288 480 L 285 481 L 283 483 L 280 484 L 278 486 L 277 486 L 275 488 L 274 488 L 271 491 L 270 491 L 267 494 L 266 494 L 253 507 L 253 508 L 249 512 L 249 513 L 246 516 L 246 517 L 242 522 L 242 523 L 241 524 L 241 525 L 240 526 L 240 527 L 239 528 L 239 529 L 238 530 L 238 531 L 237 532 L 237 533 L 234 538 L 234 540 L 233 541 L 233 543 L 232 544 L 232 546 L 231 547 L 231 549 L 230 550 L 230 552 L 229 553 L 229 556 L 228 557 L 228 562 L 227 563 L 227 570 L 226 571 L 226 590 L 227 591 L 227 597 L 228 598 L 228 603 L 229 604 L 229 607 L 230 608 L 230 610 L 231 611 L 231 613 L 232 614 L 232 616 L 233 617 L 233 619 L 235 622 L 235 624 L 236 625 L 236 626 L 237 627 L 237 628 L 238 629 L 239 632 L 241 634 L 241 635 L 242 636 L 242 637 L 244 639 L 244 640 L 247 643 L 247 644 L 251 648 L 251 649 L 261 659 L 262 659 L 266 663 L 267 663 L 270 666 L 271 666 L 273 668 L 276 669 L 278 671 L 279 671 L 280 672 L 281 672 L 282 673 L 283 673 L 284 674 L 285 674 L 290 677 L 292 677 L 293 678 L 295 678 L 296 679 L 298 679 L 299 680 L 301 680 L 302 681 L 306 681 L 307 682 L 311 682 L 312 683 L 320 683 L 321 684 L 337 684 L 338 683 L 345 683 L 346 682 L 350 682 L 351 681 L 354 681 L 355 680 L 358 680 L 359 679 L 361 679 L 362 678 L 364 678 L 367 676 L 369 676 L 370 675 L 371 675 L 372 674 L 373 674 L 374 673 L 377 672 L 379 670 L 382 669 L 384 667 L 385 667 L 387 665 L 388 665 L 391 662 L 392 662 L 407 647 L 407 646 L 410 643 L 410 642 L 413 639 L 414 636 L 416 634 L 416 633 L 417 632 L 417 631 L 418 630 L 418 629 L 419 628 L 419 627 L 422 622 L 422 620 L 423 619 L 423 617 L 425 614 L 425 611 L 426 610 L 426 607 L 427 606 L 427 603 L 428 602 L 428 598 L 429 597 L 429 588 L 430 587 L 430 577 L 429 576 L 429 568 L 428 567 L 428 563 L 427 562 L 427 558 L 426 557 L 426 555 L 425 554 L 425 551 L 424 550 L 424 548 L 421 543 L 421 541 L 419 539 L 418 536 L 416 534 L 416 533 L 414 531 L 414 530 L 411 527 L 411 526 L 405 520 L 404 520 L 400 516 L 399 516 L 394 512 L 393 512 L 392 511 L 391 511 L 390 510 L 389 510 L 388 509 L 387 509 L 382 506 L 380 506 L 379 505 L 377 505 L 376 504 L 373 504 L 372 503 L 369 503 L 368 502 L 363 502 L 362 501 L 344 501 L 343 502 L 338 502 L 337 503 L 334 503 L 333 504 L 331 504 L 330 505 L 328 505 L 327 506 L 326 506 L 325 507 L 324 507 L 323 508 L 322 508 L 321 509 L 320 509 L 319 510 L 316 511 L 314 513 L 313 513 L 310 516 L 309 516 L 300 525 L 300 526 L 297 529 L 297 530 L 295 532 L 295 533 L 293 536 L 296 535 L 298 533 L 301 532 L 303 530 L 304 530 L 305 529 L 306 529 L 311 526 L 313 526 L 316 524 L 319 524 L 320 523 L 323 523 L 324 522 L 343 522 L 344 523 L 348 523 L 349 524 L 351 524 L 352 525 L 354 525 L 355 526 L 356 526 L 357 527 L 358 527 L 359 528 L 360 528 L 361 529 L 364 530 L 366 532 L 367 532 L 379 544 L 379 545 L 382 548 L 382 549 L 383 550 L 383 551 L 384 552 L 384 553 L 387 558 L 387 560 L 388 561 L 388 564 L 389 565 L 389 568 L 390 569 L 390 574 L 391 575 L 391 582 L 390 583 L 390 589 L 389 590 L 389 593 L 388 594 L 388 597 L 387 598 L 387 600 L 386 601 L 386 602 L 385 603 L 385 604 L 384 605 L 384 606 L 383 607 L 382 610 L 380 612 L 380 613 L 378 615 L 378 616 L 367 627 L 366 627 L 363 630 L 362 630 L 360 632 L 359 632 L 358 633 L 357 633 L 352 636 L 350 636 L 349 637 L 347 637 L 346 638 L 342 638 L 341 639 L 335 639 L 334 640 L 325 640 L 324 639 L 318 639 L 317 638 L 314 638 L 313 637 L 310 637 L 309 636 L 307 636 L 306 635 L 305 635 L 304 634 L 303 634 L 302 633 L 301 633 L 300 632 L 299 632 L 298 631 L 295 630 L 293 628 L 292 628 L 289 625 L 288 625 L 276 613 L 276 612 L 273 609 L 273 608 L 271 606 L 271 605 L 270 604 L 270 603 L 269 602 L 269 601 L 268 600 L 268 599 L 265 594 L 265 592 L 264 591 L 264 588 L 263 587 L 263 584 L 262 583 L 262 577 L 261 576 L 261 563 L 262 562 L 262 556 L 263 555 L 263 551 L 264 550 L 264 547 L 265 546 L 265 544 L 266 543 L 266 541 L 267 540 L 267 539 L 268 538 L 268 536 L 269 535 L 269 534 L 270 533 L 270 532 L 271 531 L 271 530 L 272 529 L 273 526 L 275 524 L 276 521 L 279 518 L 279 517 L 282 514 L 282 513 L 288 507 L 288 506 L 293 501 L 294 501 L 300 495 L 301 495 L 308 489 L 309 489 L 314 485 L 317 484 L 319 482 L 320 482 L 321 481 L 322 481 L 323 480 L 324 480 L 325 479 L 326 479 L 327 478 L 328 478 L 333 475 L 335 475 L 336 474 L 337 474 L 338 473 L 340 473 L 343 471 L 345 471 L 346 470 L 348 470 L 349 469 L 351 469 L 352 468 L 355 468 L 356 467 Z'/%3E%3C/svg%3E");
-    --papier:#F7F6F2; --craie:#FFFFFF; --encre:#141416; --texte:#2B2B30; --graphite:#5E5E66;
-    --filet:#E3E1DA; --accent-clair:#ECEAE4;
-    --marque:#FFF1B8; --ombre:0 1px 2px rgba(20,20,22,.05),0 14px 36px -18px rgba(20,20,22,.22);
-    --rayon:16px; --max:1120px;
-    --fond:var(--papier); --surface:var(--craie); --accent:var(--encre); --accent-fort:var(--encre); --accent-doux:var(--accent-clair); --discret:var(--graphite); --sur-accent:var(--papier);
+    --papier:#F8F5F0; --sable:#F5EFE8; --craie:#FAF8F5; --encre:#202125; --texte:#464446; --graphite:#666266;
+    --filet:#DACFC5; --bronze:#A36E4D; --bronze-fort:#8F5E40; --bronze-doux:#935B3C; --bronze-clair:#F1E7DD; --sur-bronze:#FFFFFF;
+    --halo-1:#D7C8BB; --halo-2:#FFFDFA; --ombre-sculpture:#4D372522; --sol:#54381F24;
+    --marque:#FFF1B8; --rayon:6px; --max:1300px;
+    --fond:var(--papier); --surface:var(--craie); --accent:var(--bronze); --accent-fort:var(--bronze-fort); --accent-doux:var(--bronze-clair); --discret:var(--graphite); --sur-accent:var(--sur-bronze);
     color-scheme:light;
   }
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
-      --fond:#0F0F12; --surface:#18181D; --encre:#F2F1EC; --texte:#D6D5D0; --discret:#A1A1A8;
-      --filet:#2A2A31; --accent:#F2F1EC; --accent-fort:#FFFFFF; --accent-doux:#26262C; --sur-accent:#0F0F12;
-      --marque:#5A4A12; --ombre:0 1px 2px rgba(0,0,0,.35),0 14px 36px -18px rgba(0,0,0,.7);
+      --fond:#1B1917; --sable:#1F1C1A; --surface:#242120; --encre:#F3EEE7; --texte:#D9D2C8; --discret:#A39B90;
+      --filet:#3A3531; --accent:#C08A63; --accent-fort:#D1A07A; --accent-doux:#33291F; --sur-accent:#1B1917;
+      --halo-1:#3A2F27; --halo-2:#2A2522; --ombre-sculpture:#00000066; --sol:#00000055;
+      --marque:#5A4A12;
       color-scheme:dark;
     }
   }
   :root[data-theme="dark"]{
-    --fond:#0F0F12; --surface:#18181D; --encre:#F2F1EC; --texte:#D6D5D0; --discret:#A1A1A8;
-    --filet:#2A2A31; --accent:#F2F1EC; --accent-fort:#FFFFFF; --accent-doux:#26262C; --sur-accent:#0F0F12;
-    --marque:#5A4A12; --ombre:0 1px 2px rgba(0,0,0,.35),0 14px 36px -18px rgba(0,0,0,.7);
+    --fond:#1B1917; --sable:#1F1C1A; --surface:#242120; --encre:#F3EEE7; --texte:#D9D2C8; --discret:#A39B90;
+    --filet:#3A3531; --accent:#C08A63; --accent-fort:#D1A07A; --accent-doux:#33291F; --sur-accent:#1B1917;
+    --halo-1:#3A2F27; --halo-2:#2A2522; --ombre-sculpture:#00000066; --sol:#00000055;
+    --marque:#5A4A12;
     color-scheme:dark;
   }
 
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth;scroll-padding-top:84px}
-  body{margin:0;background:var(--fond);color:var(--texte);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,h4{font-family:Jost,Inter,system-ui,sans-serif;color:var(--encre);letter-spacing:-.01em;margin:0}
-  h1{font-size:clamp(2.2rem,4.8vw,3.25rem);line-height:1.06;font-weight:600}
-  h2{font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1.12;font-weight:600}
-  h3{font-size:1.25rem;line-height:1.3;font-weight:600}
+  html{scroll-behavior:smooth;scroll-padding-top:100px}
+  body{margin:0;background:var(--fond);color:var(--texte);font:400 16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:Jost,Inter,system-ui,sans-serif;color:var(--encre);font-weight:500;margin:0;letter-spacing:-.02em}
+  h1{font-size:clamp(2.6rem,4.3vw,4.1rem);line-height:1.12;letter-spacing:-.035em}
+  h2{font-size:clamp(1.9rem,3vw,2.45rem);line-height:1.1}
+  h3{font-size:1.35rem;line-height:1.3}
   p{margin:0 0 1em}
   a{color:var(--accent-fort);text-decoration:none}
   a:hover{text-decoration:underline;text-underline-offset:3px}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-  .skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--sur-accent);padding:8px 12px;border-radius:8px}
+  .skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--sur-accent);padding:8px 12px;border-radius:var(--rayon)}
   .skip:focus{left:8px;z-index:100}
 
-  /* Logo et monogramme : masques CSS, la couleur suit le texte */
   .logo{display:inline-block;width:150px;aspect-ratio:1151/333;background:currentColor;color:var(--encre);-webkit-mask:var(--logo-url) no-repeat center/contain;mask:var(--logo-url) no-repeat center/contain}
   .mono{display:inline-block;width:1em;aspect-ratio:228/242;background:currentColor;-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain;vertical-align:-.15em}
 
   /* En-tête */
-  header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--fond) 84%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+  header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--fond) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
   header.defile{border-bottom-color:var(--filet)}
-  .barre{display:flex;align-items:center;gap:18px;height:72px}
+  .barre{display:flex;align-items:center;gap:18px;height:90px}
   .barre .logo{flex:none}
-  nav{margin-left:auto;display:flex;gap:4px}
-  nav a{color:var(--texte);font-weight:500;font-size:.95rem;padding:8px 14px;border-radius:999px}
-  nav a:hover{background:var(--accent-doux);text-decoration:none;color:var(--encre)}
-  .theme{flex:none;border:1px solid var(--filet);background:var(--surface);color:var(--encre);width:38px;height:38px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
-  .theme svg{width:18px;height:18px}
+  nav{margin-left:auto;display:flex;gap:35px;font-size:14px}
+  nav a{color:var(--encre)}
+  .theme{flex:none;border:1px solid var(--filet);background:transparent;color:var(--encre);width:36px;height:36px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+  .theme svg{width:17px;height:17px}
   .theme .lune{display:none}
   :root[data-theme="dark"] .theme .lune{display:block} :root[data-theme="dark"] .theme .soleil{display:none}
   @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .theme .lune{display:block} :root:not([data-theme="light"]) .theme .soleil{display:none}}
-  @media (max-width:640px){.barre{flex-wrap:wrap;height:auto;padding:10px 0 6px} .barre .logo{width:124px} .theme{margin-left:auto} nav{order:3;width:100%;margin-left:0;gap:2px;flex-wrap:wrap} nav a{padding:6px 10px;font-size:.9rem}}
+  @media (max-width:760px){.barre{height:68px;gap:10px}.barre .logo{width:104px}nav{gap:12px;font-size:12px;white-space:nowrap}.theme{width:32px;height:32px}}
 
-  /* Boutons */
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:.98rem;border:1px solid transparent;cursor:pointer;transition:transform .15s,background .15s,border-color .15s;font-family:Jost,Inter,sans-serif;letter-spacing:.01em}
+  /* Boutons (rectangles aux angles doux, comme l'aperçu) */
+  .btn{display:inline-flex;align-items:center;gap:24px;padding:18px 26px;border-radius:var(--rayon);border:1px solid var(--accent);color:var(--encre);font:500 14px Inter,sans-serif;cursor:pointer;transition:background .15s,color .15s,transform .15s;background:transparent}
   .btn:hover{text-decoration:none;transform:translateY(-1px)}
-  .btn-plein{background:var(--encre);color:var(--fond)}
-  .btn-plein:hover{background:var(--graphite);color:#fff}
-  .btn-ligne{border-color:var(--filet);color:var(--encre);background:var(--surface)}
-  .btn-ligne:hover{border-color:var(--accent)}
-  .btn svg{width:16px;height:16px}
+  .btn.primary{background:var(--accent);color:var(--sur-accent)}
+  .btn.primary:hover{background:var(--accent-fort)}
+  .btn:not(.primary):hover{background:var(--accent-doux)}
+  .btn span{font-size:15px}
 
-  /* Sections */
-  section{padding:96px 0}
-  .surtitre{display:inline-flex;align-items:center;gap:10px;color:var(--accent-fort);font-weight:600;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;font-family:Jost,Inter,sans-serif}
-  .surtitre .mono{font-size:1.05rem}
-  .intro{font-size:1.12rem;color:var(--discret);max-width:720px;margin:14px 0 0}
-  .grille{display:grid;gap:20px;margin-top:40px}
-  .g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-  .carte{background:var(--surface);border:1px solid var(--filet);border-radius:var(--rayon);padding:28px;box-shadow:var(--ombre)}
-  .etiquette{display:inline-block;font-size:.78rem;font-weight:600;padding:4px 11px;border-radius:999px;background:var(--accent-doux);color:var(--accent-fort);letter-spacing:.02em}
+  /* Titres de section : filet bronze au-dessus, titre à gauche, intro à droite */
+  .sectionhead{display:flex;gap:80px;align-items:flex-start;margin-bottom:44px}
+  .sectionhead h2{min-width:47%;max-width:47%}
+  .sectionhead h2::before{content:"";display:block;background:var(--accent);width:42px;height:2px;margin-bottom:20px}
+  .sectionhead p{font-size:15px;line-height:1.7;color:var(--discret);margin:0;padding-top:30px}
+  .eyebrow{font-size:12px;letter-spacing:.17em;text-transform:uppercase;color:var(--bronze-doux);font-weight:600;margin:0 0 42px}
+  .eyebrow::after{content:"";display:block;background:var(--accent);width:84px;height:1px;margin-top:17px}
+  :root[data-theme="dark"] .eyebrow{color:var(--accent)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .eyebrow{color:var(--accent)}}
+  section{padding:70px 0 76px}
+  section + section{border-top:1px solid var(--filet)}
+  .alt{background:var(--surface)}
   mark.a-completer{background:var(--marque);color:inherit;padding:0 4px;border-radius:4px}
-  .alt{background:var(--surface);border-top:1px solid var(--filet);border-bottom:1px solid var(--filet)}
-  .alt .carte{background:var(--fond);box-shadow:none}
-  @media (max-width:860px){section{padding:64px 0}}
+  @media (max-width:860px){.sectionhead{display:block}.sectionhead h2{max-width:none;margin-bottom:22px}.sectionhead p{padding-top:0}section{padding:55px 0}}
 
-  /* Apparition au défilement */
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
   /* ===== Accueil ===== */
-  .hero{padding:72px 0 64px;position:relative;overflow:hidden}
-  .hero .wrap{display:grid;gap:48px;grid-template-columns:1.1fr .9fr;align-items:center}
-  .hero p.lead{font-size:1.18rem;color:var(--texte);margin:24px 0 32px;max-width:600px}
-  .hero .actions{display:flex;flex-wrap:wrap;gap:12px}
-  .reperes{display:flex;gap:28px;margin-top:40px;padding-top:28px;border-top:1px solid var(--filet);flex-wrap:wrap}
-  .repere b{display:block;font:600 2.4rem/1 Jost,sans-serif;color:var(--encre);margin-bottom:6px}
-  .repere b em{font-style:normal;color:var(--discret)}
-  .repere span{color:var(--discret);font-size:.92rem;max-width:260px;display:block}
-  .visuel{position:relative;aspect-ratio:1;max-width:520px;margin:0 auto;width:100%}
-  .visuel svg{width:100%;height:100%;display:block;overflow:visible}
-  .orbite{transform-origin:260px 260px;transform-box:view-box;animation:tourne 90s linear infinite}
-  .agent{transform-box:fill-box;transform-origin:center;animation:tourne 90s linear infinite reverse}
-  @keyframes tourne{to{transform:rotate(360deg)}}
-  @media (prefers-reduced-motion:reduce){.orbite,.agent{animation:none}}
-  .visuel .halo{fill:url(#halo)}
-  .visuel .cercle{fill:none;stroke:var(--filet);stroke-width:1.5;stroke-dasharray:4 6}
-  .visuel .lien{stroke:var(--discret);stroke-width:1;stroke-linecap:round;opacity:.6}
-  .visuel .noeud{fill:var(--surface);stroke:var(--encre);stroke-width:1.5}
-  .visuel .noeud-txt{font:600 12.5px Jost,sans-serif;fill:var(--encre);letter-spacing:.02em}
-  .visuel .pilote{fill:var(--encre)}
-  .visuel .legende{font:500 11px Inter,sans-serif;fill:var(--discret);letter-spacing:.12em;text-transform:uppercase}
-  @media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.visuel{max-width:420px}.hero{padding:56px 0 40px}}
+  /* Accueil : la photo d'origine de la sculpture, fond, lumière et ombre compris, étirée en image de fond ;
+     la sculpture nette est calée sur le bord droit de la colonne de contenu. */
+  .hero{min-height:650px;position:relative;display:flex;align-items:center;padding:0;border-top:0;
+    background:url(assets/img/hero-fond.webp) no-repeat right max(0px,calc(50% - 650px)) center / auto 100%,
+      radial-gradient(ellipse at 24% 30%,var(--halo-2) 0%,transparent 53%),#E8D5C1}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--sable) 55%,transparent) 0%,transparent 45%);pointer-events:none}
+  .hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--filet);pointer-events:none}
+  :root[data-theme="dark"] .hero::before{background:linear-gradient(90deg,rgba(27,25,23,.72) 0%,rgba(27,25,23,.62) 45%,rgba(27,25,23,.35) 100%)}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero::before{background:linear-gradient(90deg,rgba(27,25,23,.72) 0%,rgba(27,25,23,.62) 45%,rgba(27,25,23,.35) 100%)}}
+  .sculpture{display:none}
+  .herowrap{max-width:var(--max);margin:auto;width:100%;padding:40px 20px 70px;display:grid;grid-template-columns:57% 43%;align-items:center;position:relative;z-index:1}
+  .hero h1{margin:0 0 28px;max-width:785px}
+  .hero p.lead{font-size:18px;line-height:1.8;max-width:600px;color:var(--texte);margin:0 0 40px}
+  .actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  @media (max-width:860px){.hero{min-height:0;background:radial-gradient(ellipse at 84% 24%,var(--halo-1) 0%,transparent 39%),radial-gradient(ellipse at 24% 30%,var(--halo-2) 0%,transparent 53%),var(--sable)}.hero::before{display:none}.herowrap{padding:60px 20px 38px;display:flex;flex-direction:column;align-items:stretch}.eyebrow{font-size:10px;margin-bottom:22px}.hero p.lead{font-size:16px;line-height:1.65}.sculpture{display:flex;position:relative;height:390px;justify-content:center;align-items:center}.sculpture img{width:min(100%,350px);height:420px;object-fit:contain;filter:drop-shadow(0 24px 18px var(--ombre-sculpture))}.sculpture::after{content:"";position:absolute;bottom:7px;width:70%;height:19px;background:var(--sol);filter:blur(15px);z-index:-1}}
 
-  /* ===== Trois ères ===== */
-  #methode{position:relative;overflow:hidden}
-  #methode .wrap{position:relative}
-  .horizon{position:absolute;right:-28px;top:-86px;width:min(54%,600px);height:auto;pointer-events:none;mix-blend-mode:multiply;opacity:.92}
-  :root[data-theme="dark"] .horizon{mix-blend-mode:screen;opacity:.35}
-  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .horizon{mix-blend-mode:screen;opacity:.35}}
-  @media (max-width:900px){.horizon{display:none}}
-  .eres{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;padding-top:18px}
-  .eres::before{content:"";position:absolute;left:4%;right:4%;top:32px;height:2px;background:linear-gradient(90deg,var(--filet) 0,var(--filet) 58%,var(--accent) 100%)}
-  .eres::after{content:"";position:absolute;right:calc(4% - 6px);top:27px;width:12px;height:12px;border-top:2px solid var(--accent);border-right:2px solid var(--accent);transform:rotate(45deg)}
-  .ere{position:relative;display:flex;flex-direction:column}
-  .ere .point{position:relative;z-index:1;align-self:flex-start;background:var(--surface);border:2px solid var(--filet);color:var(--discret);font:600 .88rem/1 Jost,sans-serif;padding:8px 13px;border-radius:999px}
-  .ere.actuelle .point{background:var(--accent);border-color:var(--accent);color:var(--sur-accent)}
-  .ere .scene{margin:18px 0 16px;padding:10px;background:#F3F1EC;border:1px solid var(--filet);border-radius:var(--rayon);box-shadow:var(--ombre);position:relative;container-type:inline-size}
+  /* Bandeau de repères sous l'accueil */
+  .reperes{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start}
+  .reperes p{color:var(--discret);font-size:15px;margin:0}
+  .repere b{display:block;font:500 2.2rem/1 Jost,sans-serif;color:var(--encre);margin-bottom:8px}
+  .repere b em{font-style:normal;color:var(--accent)}
+  .repere span{color:var(--discret);font-size:14px;line-height:1.6;display:block}
+  @media (max-width:860px){.reperes{grid-template-columns:1fr;gap:24px}}
+
+  /* ===== Pourquoi maintenant : trois colonnes séparées par des filets ===== */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr)}
+  .cards article{padding:4px 45px 0 0;margin-right:45px;border-right:1px solid var(--filet)}
+  .cards article:last-child{border:0;margin-right:0}
+  .cards .glyphe{font:500 26px Jost,sans-serif;color:var(--accent)}
+  .cards h3{font-size:22px;margin:14px 0 10px}
+  .cards p{font-size:14px;line-height:1.7;color:var(--graphite);margin:0}
+  @media (max-width:860px){.cards{display:block}.cards article{border-right:0;border-bottom:1px solid var(--filet);margin:0;padding:20px 0}.cards article:last-child{border-bottom:0}}
+
+  /* Trois époques, illustrées */
+  .epoques{margin-top:64px;padding-top:48px;border-top:1px solid var(--filet)}
+  .epoques .sous-titre{font-size:1.6rem;max-width:720px;margin-bottom:12px}
+  .epoques .intro{color:var(--discret);max-width:720px;font-size:15px;line-height:1.7;margin-bottom:36px}
+  .eres{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+  .ere{display:flex;flex-direction:column}
+  .ere .point{font:500 13px/1 Jost,sans-serif;letter-spacing:.14em;color:var(--accent);margin-bottom:14px}
+  .ere .scene{margin:0 0 18px;padding:10px;background:#F3EEE6;border:1px solid var(--filet);border-radius:10px;position:relative;container-type:inline-size}
   .ere .scene img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain}
-  .ere.actuelle .scene{border-color:var(--encre)}
-  .scene .phase{position:absolute;transform:translate(-50%,0);font:600 2.9cqw/1 Jost,sans-serif;color:#141416;background:rgba(255,255,255,.85);border:1px solid #D9D6CE;border-radius:999px;padding:.45cqw 1.6cqw;white-space:nowrap;letter-spacing:.02em;pointer-events:none}
-  .ere small{display:block;color:var(--accent-fort);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;margin-bottom:8px;font-family:Jost,Inter,sans-serif}
-  .ere h3{font-size:1.12rem;margin-bottom:8px}
-  .ere p{color:var(--texte);font-size:.98rem;flex:1}
-  .budget{height:10px;border-radius:5px;background:var(--filet);overflow:hidden;margin-top:6px}
-  .budget i{display:block;height:100%;width:0;background:var(--filet);filter:brightness(.85);border-radius:5px;transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+  .scene .phase{position:absolute;transform:translate(-50%,0);font:600 2.9cqw/1 Jost,sans-serif;color:#202125;background:rgba(255,255,255,.85);border:1px solid #D9D6CE;border-radius:999px;padding:.45cqw 1.6cqw;white-space:nowrap;letter-spacing:.02em;pointer-events:none}
+  .ere h3{font-size:1.15rem;margin-bottom:8px}
+  .ere p{color:var(--graphite);font-size:14px;line-height:1.7;flex:1}
+  .budget{height:6px;border-radius:3px;background:var(--filet);overflow:hidden;margin-top:10px}
+  .budget i{display:block;height:100%;width:0;background:var(--discret);opacity:.45;transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
   .in .budget i{width:var(--p)}
   @media (prefers-reduced-motion:reduce){.budget i{width:var(--p);transition:none}}
-  .ere.actuelle .budget i{background:var(--encre);filter:none}
-  .legende-budget{margin-top:14px;color:var(--discret);font-size:.86rem;display:flex;align-items:center;gap:8px}
-  .legende-budget i{display:inline-block;width:22px;height:8px;border-radius:4px;background:var(--encre)}
-  @media (max-width:760px){.eres{grid-template-columns:1fr;gap:36px}.eres::before,.eres::after{display:none}.ere .scene{max-width:360px}}
+  .ere.actuelle .budget i{background:var(--accent);opacity:1}
+  .legende-budget{margin-top:18px;color:var(--discret);font-size:13px;display:flex;align-items:center;gap:8px}
+  .legende-budget i{display:inline-block;width:22px;height:6px;border-radius:3px;background:var(--accent)}
+  @media (max-width:860px){.eres{grid-template-columns:1fr;gap:36px}.ere .scene{max-width:360px}}
 
-  /* ===== Au-delà du vibe coding ===== */
-  .au-dela{margin-top:80px}
-  .au-dela .titre-bloc{font-size:clamp(1.45rem,2.7vw,2rem);max-width:820px}
-  .au-dela .intro{margin-top:12px}
-  .piliers{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:36px}
-  .pilier{background:var(--surface);border:1px solid var(--filet);border-radius:var(--rayon);padding:28px 30px;box-shadow:var(--ombre);display:flex;flex-direction:column;position:relative;overflow:hidden}
-  .pilier::after{content:"";position:absolute;right:-40px;bottom:-60px;width:180px;height:190px;background:var(--filet);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain;opacity:.55;pointer-events:none}
-  .pilier>*{position:relative;z-index:1}
+  /* ===== Expertises : grille 2 x 2 à filets ===== */
+  .piliers{display:grid;grid-template-columns:1fr 1fr}
+  .pilier{padding:36px 48px 36px 0;border-bottom:1px solid var(--filet);display:flex;flex-direction:column}
+  .pilier:nth-child(odd){border-right:1px solid var(--filet)}
+  .pilier:nth-child(even){padding-left:48px;padding-right:0}
+  .pilier:nth-last-child(-n+2){border-bottom:0}
   .pilier-tete{display:flex;align-items:center;gap:14px;margin-bottom:16px}
-  .pilier .ico{width:46px;height:46px;border-radius:12px;background:var(--encre);color:var(--fond);display:grid;place-items:center;flex:none}
-  .pilier .ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-  .pilier .num{font:600 .82rem/1 Jost,sans-serif;color:var(--accent-fort);letter-spacing:.1em}
-    .pilier h3{font-size:1.25rem;margin-bottom:10px}
-  .pilier p{font-size:.98rem;margin-bottom:16px}
-  .pratiques{list-style:none;margin:auto 0 0;padding:16px 0 0;border-top:1px solid var(--filet);display:grid;gap:9px}
-  .pratiques li{position:relative;padding-left:24px;font-size:.92rem;color:var(--texte)}
-  .pratiques li::before{content:"";position:absolute;left:0;top:.3em;width:14px;height:15px;background:var(--accent);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain}
-  @media (max-width:860px){.piliers{grid-template-columns:1fr}}
+  .pilier .ico{width:44px;height:44px;border-radius:50%;border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;flex:none}
+  .pilier .ico svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .pilier .num{font:500 .85rem/1 Jost,sans-serif;color:var(--accent);letter-spacing:.14em}
+  .pilier h3{font-size:1.3rem;margin-bottom:10px}
+  .pilier p{font-size:15px;line-height:1.7;color:var(--graphite);margin-bottom:16px}
+  .pratiques{list-style:none;margin:auto 0 0;padding:16px 0 0;border-top:1px solid var(--filet);display:grid;gap:8px}
+  .pratiques li{position:relative;padding-left:24px;font-size:14px;color:var(--texte)}
+  .pratiques li::before{content:"";position:absolute;left:0;top:.35em;width:13px;height:14px;background:var(--accent);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain}
+  @media (max-width:860px){.piliers{grid-template-columns:1fr}.pilier,.pilier:nth-child(even){padding:28px 0;border-right:0!important;border-bottom:1px solid var(--filet)}.pilier:last-child{border-bottom:0}}
 
-  .engagements{margin-top:36px;padding:30px 32px;border:1px solid var(--filet);border-radius:var(--rayon);background:var(--surface);box-shadow:var(--ombre)}
-  .liste-engagements{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px 28px}
-  .liste-engagements li{position:relative;padding-left:26px}
-  .liste-engagements li::before{content:"";position:absolute;left:0;top:.35em;width:14px;height:15px;background:var(--accent);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain}
-  .liste-engagements b{display:block;font:600 1.05rem/1.3 Jost,sans-serif;color:var(--encre);margin-bottom:4px}
-  .liste-engagements span{color:var(--texte);font-size:.95rem}
-  .compare-wrap{margin-top:36px;overflow-x:auto;border:1px solid var(--filet);border-radius:var(--rayon);background:var(--surface);box-shadow:var(--ombre)}
-  .compare{width:100%;border-collapse:collapse;min-width:760px;font-size:.95rem}
-  .compare th,.compare td{padding:16px 18px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--filet);line-height:1.45}
-  .compare thead th{font:600 .8rem/1.2 Jost,Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--discret);background:var(--fond)}
-  .compare tbody th{font-weight:600;color:var(--encre);width:22%}
-  .compare td{color:var(--discret);width:26%;position:relative;padding-left:42px}
-  .compare td::before{content:"";position:absolute;left:18px;top:calc(50% - 1px);width:10px;height:2px;background:var(--filet)}
-  .compare .nous{color:var(--encre);background:var(--accent-doux);font-weight:500}
-  .compare td.nous::before{width:12px;height:13px;top:calc(50% - 6px);background:var(--accent);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain}
-  .compare thead th.nous{color:var(--accent-fort)}
-  .compare thead th.nous .mono{font-size:1rem;margin-right:6px}
-  .compare tbody tr:last-child th,.compare tbody tr:last-child td{border-bottom:0}
+  /* Engagements */
+  .engagements{margin-top:64px;padding-top:48px;border-top:1px solid var(--filet)}
+  .engagements .intro{font-size:15px;line-height:1.7;color:var(--discret);max-width:760px;margin:0 0 28px}
+  .liste-engagements{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+  .liste-engagements li{padding:22px 32px 22px 0;margin-right:32px;border-right:1px solid var(--filet);border-bottom:1px solid var(--filet)}
+  .liste-engagements li:nth-child(3n){border-right:0;margin-right:0}
+  .liste-engagements li:nth-last-child(-n+3){border-bottom:0}
+  .liste-engagements b{display:block;font:500 1.15rem/1.3 Jost,sans-serif;color:var(--encre);margin-bottom:6px}
+  .liste-engagements b::before{content:"";display:inline-block;width:13px;height:14px;margin-right:10px;background:var(--accent);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain;vertical-align:-1px}
+  .liste-engagements span{color:var(--graphite);font-size:14px;line-height:1.6}
+  @media (max-width:860px){.liste-engagements{grid-template-columns:1fr}.liste-engagements li{border-right:0;margin-right:0;padding:16px 0;border-bottom:1px solid var(--filet)}.liste-engagements li:last-child{border-bottom:0}}
 
-  /* Promesse */
-  .promesse{margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border-radius:var(--rayon);overflow:hidden;background:var(--encre);color:var(--fond)}
-  .promesse div{padding:30px 30px;border-left:1px solid color-mix(in srgb,var(--fond) 14%,transparent)}
+  /* Promesse : bandeau anthracite et bronze */
+  .promesse{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:10px;overflow:hidden;background:#262321;color:#EDE6DC}
+  .promesse div{padding:34px 36px;border-left:1px solid #3B3632}
   .promesse div:first-child{border-left:0}
-  .promesse b{display:flex;align-items:center;gap:10px;font:600 1.8rem/1.1 Jost,sans-serif;color:var(--fond);margin-bottom:10px}
-  .promesse b .mono{color:var(--fond);font-size:1.3rem}
-  .promesse span{color:color-mix(in srgb,var(--fond) 78%,transparent);font-size:.96rem}
-  @media (max-width:760px){.promesse div{border-left:0;border-top:1px solid color-mix(in srgb,var(--fond) 14%,transparent)}.promesse div:first-child{border-top:0}}
+  .promesse b{display:flex;align-items:center;gap:12px;font:500 1.7rem/1.1 Jost,sans-serif;color:#F7F2EA;margin-bottom:10px}
+  .promesse b .mono{color:#C08A63;font-size:1.2rem}
+  .promesse span{color:#C9C0B4;font-size:15px;line-height:1.65}
+  @media (max-width:860px){.promesse{grid-template-columns:1fr}.promesse div{border-left:0;border-top:1px solid #3B3632}.promesse div:first-child{border-top:0}}
 
   /* Étapes */
-  .etapes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:28px;counter-reset:e}
-  .etape{position:relative;padding:18px 18px 18px 58px;border-left:1px solid var(--filet)}
-  .etape::before{counter-increment:e;content:counter(e,decimal-leading-zero);position:absolute;left:14px;top:18px;font:600 .9rem/1 Jost,sans-serif;color:var(--accent-fort);letter-spacing:.06em}
-  .etape b{display:block;color:var(--encre);font-family:Jost,sans-serif;font-size:1.08rem;margin-bottom:4px}
-  .etape span{color:var(--discret);font-size:.95rem}
+  .etapes{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:e}
+  .etape{position:relative;padding:8px 36px 8px 0;margin-right:36px;border-right:1px solid var(--filet)}
+  .etape:last-child{border-right:0;margin-right:0}
+  .etape::before{counter-increment:e;content:counter(e,decimal-leading-zero);display:block;font:500 26px/1 Jost,sans-serif;color:var(--accent);margin-bottom:14px}
+  .etape b{display:block;color:var(--encre);font:500 1.2rem/1.3 Jost,sans-serif;margin-bottom:8px}
+  .etape span{color:var(--graphite);font-size:14px;line-height:1.7}
+  @media (max-width:860px){.etapes{grid-template-columns:1fr}.etape{border-right:0;margin:0;padding:18px 0;border-bottom:1px solid var(--filet)}.etape:last-child{border-bottom:0}}
 
   /* ===== À propos ===== */
-  .apropos{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
-  .convictions{display:grid;gap:12px;margin-top:8px}
-  .convictions div{padding:16px 18px 16px 48px;border-radius:12px;background:var(--surface);border:1px solid var(--filet);font-size:.98rem;position:relative}
-  .convictions div::before{content:"";position:absolute;left:16px;top:18px;width:18px;height:19px;background:var(--accent);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain}
-  .convictions div b{color:var(--encre)}
-  @media (max-width:860px){.apropos{grid-template-columns:1fr}}
+  .apropos{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:start}
+  .apropos .intro{font-size:17px;line-height:1.75;color:var(--texte)}
+  .apropos h3{font-size:1.25rem;margin:28px 0 10px}
+  .apropos h3::before{content:"";display:block;background:var(--accent);width:42px;height:2px;margin-bottom:16px}
+  .apropos p{font-size:15px;line-height:1.75;color:var(--texte)}
+  .convictions{list-style:none;margin:0;padding:0;border-top:1px solid var(--filet)}
+  .convictions li{padding:18px 0 18px 30px;border-bottom:1px solid var(--filet);position:relative;font-size:15px;line-height:1.65;color:var(--texte)}
+  .convictions li::before{content:"";position:absolute;left:0;top:23px;width:15px;height:16px;background:var(--accent);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain}
+  .convictions b{color:var(--encre);font-weight:600}
+  @media (max-width:860px){.apropos{grid-template-columns:1fr;gap:36px}}
 
   /* ===== Contact ===== */
-  .contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-  form{display:grid;gap:14px}
-  .champs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  label{display:grid;gap:6px;font-size:.9rem;font-weight:500;color:var(--encre)}
-  input,select,textarea{font:inherit;font-size:1rem;padding:12px 14px;border-radius:10px;border:1px solid var(--filet);background:var(--fond);color:var(--encre);width:100%}
+  .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}
+  form{display:grid;gap:16px}
+  .champs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  label{display:grid;gap:7px;font-size:13px;font-weight:500;color:var(--encre);letter-spacing:.02em}
+  input,select,textarea{font:inherit;font-size:15px;padding:13px 14px;border-radius:var(--rayon);border:1px solid var(--filet);background:var(--fond);color:var(--encre);width:100%}
   input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
-  textarea{min-height:140px;resize:vertical}
-  .coord{display:grid;gap:14px;align-content:start}
-  .coord div{padding:18px 20px;border-radius:var(--rayon);background:var(--fond);border:1px solid var(--filet)}
-  .coord small{display:block;color:var(--discret);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;font-family:Jost,Inter,sans-serif;font-weight:600}
-  @media (max-width:760px){.contact{grid-template-columns:1fr}.champs{grid-template-columns:1fr}}
+  textarea{min-height:150px;resize:vertical}
+  .coord{display:grid;gap:0;align-content:start;border-top:1px solid var(--filet)}
+  .coord div{padding:18px 0;border-bottom:1px solid var(--filet)}
+  .coord small{display:block;color:var(--accent);font-size:11px;letter-spacing:.17em;text-transform:uppercase;margin-bottom:6px;font-weight:600}
+  @media (max-width:860px){.contact{grid-template-columns:1fr}.champs{grid-template-columns:1fr}}
 
   /* ===== Pied ===== */
-  footer{padding:56px 0 36px;color:var(--discret);font-size:.9rem;position:relative;overflow:hidden}
-  footer .filigrane{position:absolute;right:-80px;bottom:-120px;width:420px;height:446px;background:var(--surface);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain;pointer-events:none}
-  footer .wrap{position:relative}
-  footer .edites{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:20px;align-items:stretch;padding-bottom:40px;margin-bottom:40px;border-bottom:1px solid var(--filet)}
-  footer .edites-titre p{color:var(--texte);font-size:1rem;margin:0}
-  footer .edites-titre .surtitre{margin-bottom:8px}
-  footer .edite{display:flex;flex-direction:column;gap:6px;padding:20px 22px;border-radius:var(--rayon);background:var(--surface);border:1px solid var(--filet);color:inherit;transition:border-color .15s,transform .15s}
-  footer a.edite:hover{text-decoration:none;border-color:var(--accent);transform:translateY(-2px)}
-  footer .edite b{font:600 1.2rem/1.2 Jost,sans-serif;color:var(--encre)}
-  footer .edite span{color:var(--texte);font-size:.92rem;line-height:1.5}
-  footer .edite em{font-style:normal;color:var(--discret);font-size:.82rem;margin-top:auto}
+  footer{padding:56px 0 36px;color:var(--discret);font-size:14px;border-top:1px solid var(--filet);background:var(--surface)}
+  footer .edites{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:40px;padding-bottom:40px;margin-bottom:36px;border-bottom:1px solid var(--filet)}
+  footer .edites-titre p{color:var(--texte);font-size:15px;line-height:1.7;margin:0}
+  footer .edites-titre .eyebrow{margin-bottom:18px}
+  footer .edite{display:flex;flex-direction:column;gap:6px;padding-left:28px;border-left:1px solid var(--filet)}
+  footer .edite b{font:500 1.25rem/1.2 Jost,sans-serif;color:var(--encre)}
+  footer .edite span{color:var(--texte);font-size:14px;line-height:1.6}
+  footer .edite em{font-style:normal;color:var(--discret);font-size:13px;margin-top:auto;padding-top:8px}
   footer .haut{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;margin-bottom:22px}
-  footer .liens{display:flex;flex-wrap:wrap;gap:6px 20px}
+  footer .liens{display:flex;flex-wrap:wrap;gap:6px 24px}
   footer .liens a{color:var(--texte)}
-  footer .legal{line-height:1.7}
-  @media (max-width:860px){footer .edites{grid-template-columns:1fr}}
+  footer .legal{line-height:1.8;font-size:13px}
+  @media (max-width:860px){footer .edites{grid-template-columns:1fr;gap:24px}footer .edite{padding-left:0;border-left:0;padding-top:18px;border-top:1px solid var(--filet)}}
 </style>
 </head>
 <body>
 <a class="skip" href="#methode">Aller au contenu</a>
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="mono" viewBox="214 454 228 242"><path fill-rule="evenodd" d="M 357 467 L 351 467 L 350 466 L 335 466 L 334 467 L 326 467 L 325 468 L 320 468 L 319 469 L 316 469 L 315 470 L 312 470 L 311 471 L 309 471 L 308 472 L 306 472 L 305 473 L 303 473 L 302 474 L 300 474 L 297 476 L 295 476 L 294 477 L 293 477 L 292 478 L 291 478 L 290 479 L 289 479 L 288 480 L 285 481 L 283 483 L 280 484 L 278 486 L 277 486 L 275 488 L 274 488 L 271 491 L 270 491 L 267 494 L 266 494 L 253 507 L 253 508 L 249 512 L 249 513 L 246 516 L 246 517 L 242 522 L 242 523 L 241 524 L 241 525 L 240 526 L 240 527 L 239 528 L 239 529 L 238 530 L 238 531 L 237 532 L 237 533 L 234 538 L 234 540 L 233 541 L 233 543 L 232 544 L 232 546 L 231 547 L 231 549 L 230 550 L 230 552 L 229 553 L 229 556 L 228 557 L 228 562 L 227 563 L 227 570 L 226 571 L 226 590 L 227 591 L 227 597 L 228 598 L 228 603 L 229 604 L 229 607 L 230 608 L 230 610 L 231 611 L 231 613 L 232 614 L 232 616 L 233 617 L 233 619 L 235 622 L 235 624 L 236 625 L 236 626 L 237 627 L 237 628 L 238 629 L 239 632 L 241 634 L 241 635 L 242 636 L 242 637 L 244 639 L 244 640 L 247 643 L 247 644 L 251 648 L 251 649 L 261 659 L 262 659 L 266 663 L 267 663 L 270 666 L 271 666 L 273 668 L 276 669 L 278 671 L 279 671 L 280 672 L 281 672 L 282 673 L 283 673 L 284 674 L 285 674 L 290 677 L 292 677 L 293 678 L 295 678 L 296 679 L 298 679 L 299 680 L 301 680 L 302 681 L 306 681 L 307 682 L 311 682 L 312 683 L 320 683 L 321 684 L 337 684 L 338 683 L 345 683 L 346 682 L 350 682 L 351 681 L 354 681 L 355 680 L 358 680 L 359 679 L 361 679 L 362 678 L 364 678 L 367 676 L 369 676 L 370 675 L 371 675 L 372 674 L 373 674 L 374 673 L 377 672 L 379 670 L 382 669 L 384 667 L 385 667 L 387 665 L 388 665 L 391 662 L 392 662 L 407 647 L 407 646 L 410 643 L 410 642 L 413 639 L 414 636 L 416 634 L 416 633 L 417 632 L 417 631 L 418 630 L 418 629 L 419 628 L 419 627 L 422 622 L 422 620 L 423 619 L 423 617 L 425 614 L 425 611 L 426 610 L 426 607 L 427 606 L 427 603 L 428 602 L 428 598 L 429 597 L 429 588 L 430 587 L 430 577 L 429 576 L 429 568 L 428 567 L 428 563 L 427 562 L 427 558 L 426 557 L 426 555 L 425 554 L 425 551 L 424 550 L 424 548 L 421 543 L 421 541 L 419 539 L 418 536 L 416 534 L 416 533 L 414 531 L 414 530 L 411 527 L 411 526 L 405 520 L 404 520 L 400 516 L 399 516 L 394 512 L 393 512 L 392 511 L 391 511 L 390 510 L 389 510 L 388 509 L 387 509 L 382 506 L 380 506 L 379 505 L 377 505 L 376 504 L 373 504 L 372 503 L 369 503 L 368 502 L 363 502 L 362 501 L 344 501 L 343 502 L 338 502 L 337 503 L 334 503 L 333 504 L 331 504 L 330 505 L 328 505 L 327 506 L 326 506 L 325 507 L 324 507 L 323 508 L 322 508 L 321 509 L 320 509 L 319 510 L 316 511 L 314 513 L 313 513 L 310 516 L 309 516 L 300 525 L 300 526 L 297 529 L 297 530 L 295 532 L 295 533 L 293 536 L 296 535 L 298 533 L 301 532 L 303 530 L 304 530 L 305 529 L 306 529 L 311 526 L 313 526 L 316 524 L 319 524 L 320 523 L 323 523 L 324 522 L 343 522 L 344 523 L 348 523 L 349 524 L 351 524 L 352 525 L 354 525 L 355 526 L 356 526 L 357 527 L 358 527 L 359 528 L 360 528 L 361 529 L 364 530 L 366 532 L 367 532 L 379 544 L 379 545 L 382 548 L 382 549 L 383 550 L 383 551 L 384 552 L 384 553 L 387 558 L 387 560 L 388 561 L 388 564 L 389 565 L 389 568 L 390 569 L 390 574 L 391 575 L 391 582 L 390 583 L 390 589 L 389 590 L 389 593 L 388 594 L 388 597 L 387 598 L 387 600 L 386 601 L 386 602 L 385 603 L 385 604 L 384 605 L 384 606 L 383 607 L 382 610 L 380 612 L 380 613 L 378 615 L 378 616 L 367 627 L 366 627 L 363 630 L 362 630 L 360 632 L 359 632 L 358 633 L 357 633 L 352 636 L 350 636 L 349 637 L 347 637 L 346 638 L 342 638 L 341 639 L 335 639 L 334 640 L 325 640 L 324 639 L 318 639 L 317 638 L 314 638 L 313 637 L 310 637 L 309 636 L 307 636 L 306 635 L 305 635 L 304 634 L 303 634 L 302 633 L 301 633 L 300 632 L 299 632 L 298 631 L 295 630 L 293 628 L 292 628 L 289 625 L 288 625 L 276 613 L 276 612 L 273 609 L 273 608 L 271 606 L 271 605 L 270 604 L 270 603 L 269 602 L 269 601 L 268 600 L 268 599 L 265 594 L 265 592 L 264 591 L 264 588 L 263 587 L 263 584 L 262 583 L 262 577 L 261 576 L 261 563 L 262 562 L 262 556 L 263 555 L 263 551 L 264 550 L 264 547 L 265 546 L 265 544 L 266 543 L 266 541 L 267 540 L 267 539 L 268 538 L 268 536 L 269 535 L 269 534 L 270 533 L 270 532 L 271 531 L 271 530 L 272 529 L 273 526 L 275 524 L 276 521 L 279 518 L 279 517 L 282 514 L 282 513 L 288 507 L 288 506 L 293 501 L 294 501 L 300 495 L 301 495 L 308 489 L 309 489 L 314 485 L 317 484 L 319 482 L 320 482 L 321 481 L 322 481 L 323 480 L 324 480 L 325 479 L 326 479 L 327 478 L 328 478 L 333 475 L 335 475 L 336 474 L 337 474 L 338 473 L 340 473 L 343 471 L 345 471 L 346 470 L 348 470 L 349 469 L 351 469 L 352 468 L 355 468 L 356 467 Z"/></symbol>
-    <radialGradient id="halo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="var(--discret)" stop-opacity=".12"/><stop offset=".65" stop-color="var(--discret)" stop-opacity=".03"/><stop offset="1" stop-color="var(--discret)" stop-opacity="0"/></radialGradient>
-  </defs>
-</svg>
 
 <header id="entete">
   <div class="wrap barre">
@@ -293,107 +281,103 @@
 
 <!-- ===================== ACCUEIL ===================== -->
 <section class="hero">
-  <div class="wrap">
-    <div>
-      <div class="surtitre"><span class="mono"></span>Édition de logiciels · Solutions sur mesure · Conseil</div>
+  <div class="herowrap">
+    <div class="copy">
+      <div class="eyebrow">Édition de logiciels · Solutions sur mesure · Conseil</div>
       <h1>La technologie évolue.<br>L'expérience reste essentielle.</h1>
-      <p class="lead">Roymata Soft crée ses propres applications et accompagne les entreprises dans leurs projets technologiques. Développement sur mesure, intégration de l'IA, conseil ou évolution d'un outil existant : nous partons du besoin, pas de la technologie. Notre approche s'appuie sur 25 ans d'expérience en ingénierie logicielle et sur l'IA pour avancer plus vite, avec le même souci de qualité et de maîtrise des coûts.</p>
+      <p class="lead">Roymata Soft crée ses propres applications et accompagne les entreprises dans leurs projets technologiques.<br>Nous partons du besoin, pas de la technologie.</p>
       <div class="actions">
-        <a class="btn btn-plein" href="#contact">Parler de votre projet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ligne" href="#methode">Comment est-ce possible ?</a>
-      </div>
-      <div class="reperes" aria-label="Repères">
-        <div class="repere"><b>25 <em>ans</em></b><span>dans le logiciel, du développement à la direction d'équipes internationales</span></div>
-        <div class="repere"><b><em>+</em>IA</b><span>L'IA nous aide à produire, tester et documenter plus efficacement. Les décisions restent humaines.</span></div>
+        <a href="#contact" class="btn primary">Parler de votre projet <span>↗</span></a>
+        <a href="#methode" class="btn">Notre méthode <span>→</span></a>
       </div>
     </div>
-
-    <div class="visuel" aria-label="Le monogramme Roymata Soft au centre, six disciplines confiées aux agents d'IA en orbite : spécification, développement, tests, déploiement, documentation, revue de code" role="img">
-      <svg viewBox="0 0 520 520">
-        <circle class="halo" cx="260" cy="260" r="250"/>
-        <circle class="cercle" cx="260" cy="260" r="196"/>
-        <circle class="cercle" cx="260" cy="260" r="100" style="stroke-dasharray:2 7"/>
-        <g class="orbite">
-          <g class="lien"><line x1="260.0" y1="160.0" x2="260" y2="64"/><line x1="338.2" y1="197.7" x2="413" y2="138"/><line x1="357.5" y1="282.3" x2="451" y2="304"/><line x1="303.4" y1="350.1" x2="345" y2="437"/><line x1="216.6" y1="350.1" x2="175" y2="437"/><line x1="162.5" y1="282.3" x2="69" y2="304"/><line x1="181.8" y1="197.7" x2="107" y2="138"/></g>
-          <g transform="translate(260 64)"><g class="agent"><rect class="noeud" x="-62" y="-17" width="124" height="34" rx="17"/><text class="noeud-txt" text-anchor="middle" y="4.5">Spécification</text></g></g>
-          <g transform="translate(413 138)"><g class="agent"><rect class="noeud" x="-55" y="-17" width="110" height="34" rx="17"/><text class="noeud-txt" text-anchor="middle" y="4.5">Conception</text></g></g>
-          <g transform="translate(451 304)"><g class="agent"><rect class="noeud" x="-67" y="-17" width="134" height="34" rx="17"/><text class="noeud-txt" text-anchor="middle" y="4.5">Développement</text></g></g>
-          <g transform="translate(345 437)"><g class="agent"><rect class="noeud" x="-46" y="-17" width="92" height="34" rx="17"/><text class="noeud-txt" text-anchor="middle" y="4.5">Qualité</text></g></g>
-          <g transform="translate(175 437)"><g class="agent"><rect class="noeud" x="-59" y="-17" width="118" height="34" rx="17"/><text class="noeud-txt" text-anchor="middle" y="4.5">Déploiement</text></g></g>
-          <g transform="translate(69 304)"><g class="agent"><rect class="noeud" x="-59" y="-17" width="118" height="34" rx="17"/><text class="noeud-txt" text-anchor="middle" y="4.5">Exploitation</text></g></g>
-          <g transform="translate(107 138)"><g class="agent"><rect class="noeud" x="-59" y="-17" width="118" height="34" rx="17"/><text class="noeud-txt" text-anchor="middle" y="4.5">Maintenance</text></g></g>
-        </g>
-        <use href="#mono" class="pilote" x="185" y="180" width="150" height="160"/>
-      </svg>
+    <div class="sculpture">
+      <img src="assets/img/sculpture.webp" alt="Sculpture en croissant, anthracite à l'extérieur, bronze à l'intérieur" loading="eager" decoding="async">
     </div>
   </div>
 </section>
 
-<!-- ===================== MÉTHODE ===================== -->
-<section id="methode" class="alt">
+<section class="alt" style="padding:44px 0">
+  <div class="wrap reperes reveal">
+    <p>Développement sur mesure, intégration de l'IA, conseil ou évolution d'un outil existant : notre approche s'appuie sur 25 ans d'expérience en ingénierie logicielle et sur l'IA pour avancer plus vite, avec le même souci de qualité et de maîtrise des coûts.</p>
+    <div class="repere"><b>25 <em>ans</em></b><span>dans le logiciel, du développement à la direction d'équipes internationales</span></div>
+    <div class="repere"><b><em>+</em>IA</b><span>L'IA nous aide à produire, tester et documenter plus efficacement. Les décisions restent humaines.</span></div>
+  </div>
+</section>
+
+<!-- ===================== POURQUOI MAINTENANT ===================== -->
+<section id="methode">
   <div class="wrap">
-    <img class="horizon" src="assets/img/horizon.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
-    <div class="surtitre"><span class="mono"></span>Pourquoi maintenant</div>
-    <h2>De nouvelles possibilités, sans changer les fondamentaux.</h2>
-    <p class="intro">L'IA change concrètement notre façon de travailler. Certaines tâches prennent moins de temps, ce qui laisse davantage de place pour comprendre le besoin, faire les bons choix et tester les solutions. Mais un projet réussi demande toujours de l'expérience, de la méthode et quelqu'un qui assume les décisions.</p>
-
-    <div class="eres reveal" role="list">
-      <article class="ere" role="listitem">
-        <span class="point">1.0</span>
-        <figure class="scene"><img src="assets/img/ere-1.webp" alt="Un développeur seul devant son écran, un sablier sur le bureau" loading="eager" decoding="async"></figure>
-        <small>L'artisanat</small>
-        <h3>Au départ, des outils et beaucoup de travail manuel.</h3>
-        <p>Le développement reposait largement sur le travail individuel, avec des délais longs et une forte dépendance aux personnes.</p>
-        <div class="budget" aria-hidden="true"><i style="--p:50%"></i></div>
-      </article>
-
-      <article class="ere" role="listitem">
-        <span class="point">2.0</span>
-        <figure class="scene"><img src="assets/img/ere-2.webp" alt="Une équipe nombreuse en réunion devant un tableau couvert de post-it et de schémas" loading="eager" decoding="async"></figure>
-        <small>L'industrie</small>
-        <h3>Puis des équipes plus grandes et des projets mieux structurés.</h3>
-        <p>Les méthodes et les équipes ont permis de réaliser des projets plus ambitieux. Elles ont aussi ajouté des échanges, des validations et du temps de coordination.</p>
-        <div class="budget" aria-hidden="true"><i style="--p:30%"></i></div>
-      </article>
-
-      <article class="ere actuelle" role="listitem">
-        <span class="point">3.0</span>
-        <figure class="scene scene-3"><img src="assets/img/ere-3.webp" alt="Un de nos ingénieurs désigne le monogramme Roymata Soft, relié à six agents : spécification, développement, qualité, déploiement, exploitation, maintenance" loading="eager" decoding="async"><span class="phase" style="left:42.5%;top:24.3%">Spécification</span><span class="phase" style="left:85.1%;top:24.3%">Développement</span><span class="phase" style="left:39.9%;top:45.8%">Qualité</span><span class="phase" style="left:90.3%;top:46.8%">Déploiement</span><span class="phase" style="left:43.4%;top:68.3%">Exploitation</span><span class="phase" style="left:87.0%;top:70.2%">Maintenance</span></figure>
-        <small>L'IA sous direction</small>
-        <h3>Aujourd'hui, l'IA prend en charge une partie de l'exécution.</h3>
-        <p>Nous utilisons des outils d'IA pour accélérer le développement, les tests et la documentation. L'analyse du besoin, les choix techniques et la validation du résultat restent sous notre responsabilité.</p>
-        <div class="budget" aria-hidden="true"><i style="--p:85%"></i></div>
-      </article>
+    <div class="sectionhead reveal">
+      <h2>Pourquoi maintenant</h2>
+      <p>Les outils évoluent vite. Les enjeux, eux, restent les mêmes : comprendre un besoin, faire les bons choix et livrer des solutions utiles et durables.</p>
     </div>
-    <p class="legende-budget"><i></i> Illustration de la place du travail de réalisation et de la coordination dans différentes organisations. Schéma indicatif, non chiffré.</p>
-
-    <div class="au-dela reveal">
-      <div class="surtitre"><span class="mono"></span>Au-delà du prototype</div>
-      <h3 class="titre-bloc">Un prototype rapide, c'est bien. Une solution fiable, c'est mieux.</h3>
-      <p class="intro">L'IA permet d'obtenir très vite un premier résultat. Le vrai travail commence lorsqu'il faut intégrer une solution à son environnement, protéger les données, prévoir son exploitation et la faire évoluer. Nous utilisons l'IA au quotidien, avec des choix techniques vérifiés et une responsabilité clairement assumée.</p>
+    <div class="cards reveal">
+      <article><span class="glyphe">↗</span><h3>Des outils plus puissants</h3><p>L'IA nous permet d'aller plus vite et d'explorer de nouvelles possibilités.</p></article>
+      <article><span class="glyphe">◎</span><h3>Des besoins plus complexes</h3><p>Les projets demandent de comprendre les données, les intégrations et les contraintes métier.</p></article>
+      <article><span class="glyphe">◇</span><h3>La même exigence</h3><p>L'expérience reste déterminante dans les choix et la qualité du résultat.</p></article>
     </div>
 
-    <div class="piliers">
-      <article class="pilier reveal">
-        <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></span><div><span class="num">01</span></div></div>
+    <div class="epoques reveal">
+      <h3 class="sous-titre">De nouvelles possibilités, sans changer les fondamentaux.</h3>
+      <p class="intro">L'IA change concrètement notre façon de travailler. Certaines tâches prennent moins de temps, ce qui laisse davantage de place pour comprendre le besoin, faire les bons choix et tester les solutions. Mais un projet réussi demande toujours de l'expérience, de la méthode et quelqu'un qui assume les décisions.</p>
+      <div class="eres" role="list">
+        <article class="ere" role="listitem">
+          <span class="point">1.0 · L'ARTISANAT</span>
+          <figure class="scene"><img src="assets/img/ere-1.webp" alt="Un développeur seul devant son écran, un sablier sur le bureau" loading="eager" decoding="async"></figure>
+          <h3>Au départ, des outils et beaucoup de travail manuel.</h3>
+          <p>Le développement reposait largement sur le travail individuel, avec des délais longs et une forte dépendance aux personnes.</p>
+          <div class="budget" aria-hidden="true"><i style="--p:50%"></i></div>
+        </article>
+        <article class="ere" role="listitem">
+          <span class="point">2.0 · L'INDUSTRIE</span>
+          <figure class="scene"><img src="assets/img/ere-2.webp" alt="Une équipe nombreuse en réunion devant un tableau couvert de post-it et de schémas" loading="eager" decoding="async"></figure>
+          <h3>Puis des équipes plus grandes et des projets mieux structurés.</h3>
+          <p>Les méthodes et les équipes ont permis de réaliser des projets plus ambitieux. Elles ont aussi ajouté des échanges, des validations et du temps de coordination.</p>
+          <div class="budget" aria-hidden="true"><i style="--p:30%"></i></div>
+        </article>
+        <article class="ere actuelle" role="listitem">
+          <span class="point">3.0 · L'IA SOUS DIRECTION</span>
+          <figure class="scene scene-3"><img src="assets/img/ere-3.webp" alt="Un de nos ingénieurs désigne le monogramme Roymata Soft, relié à six agents : spécification, développement, qualité, déploiement, exploitation, maintenance" loading="eager" decoding="async"><span class="phase" style="left:42.5%;top:24.3%">Spécification</span><span class="phase" style="left:85.1%;top:24.3%">Développement</span><span class="phase" style="left:39.9%;top:45.8%">Qualité</span><span class="phase" style="left:90.3%;top:46.8%">Déploiement</span><span class="phase" style="left:43.4%;top:68.3%">Exploitation</span><span class="phase" style="left:87.0%;top:70.2%">Maintenance</span></figure>
+          <h3>Aujourd'hui, l'IA prend en charge une partie de l'exécution.</h3>
+          <p>Nous utilisons des outils d'IA pour accélérer le développement, les tests et la documentation. L'analyse du besoin, les choix techniques et la validation du résultat restent sous notre responsabilité.</p>
+          <div class="budget" aria-hidden="true"><i style="--p:85%"></i></div>
+        </article>
+      </div>
+      <p class="legende-budget"><i></i> Illustration de la place du travail de réalisation et de la coordination dans différentes organisations. Schéma indicatif, non chiffré.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AU-DELÀ DU PROTOTYPE ===================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <h2>Un prototype rapide, c'est bien. Une solution fiable, c'est mieux.</h2>
+      <p>L'IA permet d'obtenir très vite un premier résultat. Le vrai travail commence lorsqu'il faut intégrer une solution à son environnement, protéger les données, prévoir son exploitation et la faire évoluer. Nous utilisons l'IA au quotidien, avec des choix techniques vérifiés et une responsabilité clairement assumée.</p>
+    </div>
+
+    <div class="piliers reveal">
+      <article class="pilier">
+        <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></span><span class="num">01</span></div>
         <h3>Des choix techniques adaptés à votre projet</h3>
         <p>Une solution doit répondre au besoin d'aujourd'hui sans compliquer demain. Nous choisissons une architecture en fonction de l'usage, du volume de données, du budget et des contraintes d'exploitation. Notre expérience des plateformes SaaS et des systèmes de données nous aide à éviter les choix coûteux à long terme.</p>
         <ul class="pratiques"><li>Architectures cloud-native, serverless lorsque pertinent</li><li>Dimensionnement et FinOps dès la conception</li><li>Données : PostgreSQL, PostGIS, pipelines reproductibles</li><li>Décisions d'architecture documentées (ADR)</li></ul>
       </article>
-      <article class="pilier reveal">
-        <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3.5v5c0 5-3.4 8.6-8 9.5-4.6-.9-8-4.5-8-9.5v-5z"/><path d="M9 12l2 2 4-4"/></svg></span><div><span class="num">02</span></div></div>
+      <article class="pilier">
+        <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3.5v5c0 5-3.4 8.6-8 9.5-4.6-.9-8-4.5-8-9.5v-5z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="num">02</span></div>
         <h3>Des solutions prêtes à être utilisées et maintenues</h3>
         <p>Nous ne nous arrêtons pas à une démonstration qui fonctionne. Tests, sécurité, déploiement, documentation et suivi font partie du travail, que le code ait été écrit avec ou sans l'aide de l'IA.</p>
         <ul class="pratiques"><li>Spécifications écrites avant le code</li><li>Tests automatisés et revue humaine systématique</li><li>CI/CD, observabilité, journalisation</li><li>Sécurité du code généré : secrets, moindre privilège, dépendances</li></ul>
       </article>
-      <article class="pilier reveal">
-        <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/><path d="M21 3l-6 6"/></svg></span><div><span class="num">03</span></div></div>
+      <article class="pilier">
+        <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/><path d="M21 3l-6 6"/></svg></span><span class="num">03</span></div>
         <h3>Construire quelque chose qui répond à un vrai besoin</h3>
         <p>Avant de développer, nous cherchons à comprendre qui utilisera la solution, quel problème elle résout et ce qui compte vraiment pour le client. Cette réflexion permet de fixer les priorités, de limiter les fonctions inutiles et, pour un produit commercial, de préparer sa mise sur le marché.</p>
         <ul class="pratiques"><li>Personae : acheteurs, utilisateurs, décideurs, et ce que chacun attend</li><li>Cadrage orienté valeur, pas liste de fonctions</li><li>Avant-vente, démonstrations, tarification et positionnement</li><li>Mesure de l'usage par persona après la mise en ligne</li></ul>
       </article>
-      <article class="pilier reveal">
-        <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.3"/><circle cx="5" cy="18" r="2.3"/><circle cx="19" cy="18" r="2.3"/><circle cx="12" cy="13" r="2.3"/><path d="M12 7.3v3.4M10.2 14.6l-3.5 2M13.8 14.6l3.5 2"/></svg></span><div><span class="num">04</span></div></div>
+      <article class="pilier">
+        <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.3"/><circle cx="5" cy="18" r="2.3"/><circle cx="19" cy="18" r="2.3"/><circle cx="12" cy="13" r="2.3"/><path d="M12 7.3v3.4M10.2 14.6l-3.5 2M13.8 14.6l3.5 2"/></svg></span><span class="num">04</span></div>
         <h3>Utiliser l'IA avec méthode</h3>
         <p>L'IA fait partie de nos outils de travail, mais elle ne décide pas seule. Nous définissons ce qui doit être réalisé, contrôlons les résultats et gardons la maîtrise des coûts et des données. Cette pratique s'appuie aussi sur une formation à la donnée et à l'IA suivie à l'École polytechnique en 2026.</p>
         <ul class="pratiques"><li>Spec-driven : l'agent exécute une intention écrite</li><li>Vérification automatique et évaluations continues</li><li>Validation humaine aux étapes critiques</li><li>Coûts d'inférence suivis et plafonnés</li></ul>
@@ -401,7 +385,7 @@
     </div>
 
     <div class="engagements reveal">
-      <p class="intro" style="margin:0 0 22px">Notre différence : une structure légère, une expérience de l'ingénierie et des outils d'IA intégrés au travail quotidien. Plutôt que d'opposer des méthodes, voici nos engagements concrets.</p>
+      <p class="intro">Notre différence : une structure légère, une expérience de l'ingénierie et des outils d'IA intégrés au travail quotidien. Plutôt que d'opposer des méthodes, voici nos engagements concrets.</p>
       <ul class="liste-engagements">
         <li><b>Cadrage</b><span>Un périmètre écrit et partagé avant de développer.</span></li>
         <li><b>Validation</b><span>Des tests et une relecture avant chaque livraison.</span></li>
@@ -417,11 +401,15 @@
       <div><b><span class="mono"></span>Plus vite</b><span>Une première version rapidement, puis des ajustements réguliers au fil de vos retours.</span></div>
       <div><b><span class="mono"></span>Moins cher</b><span>Une organisation resserrée et des outils adaptés pour consacrer le budget à ce qui compte pour le projet.</span></div>
     </div>
+  </div>
+</section>
 
-    <div class="au-dela reveal" style="margin-top:64px">
-      <div class="surtitre"><span class="mono"></span>Comment nous travaillons</div>
-      <h3 class="titre-bloc">On échange, on cadre, puis on avance sur du concret.</h3>
-      <p class="intro">Nous commençons par comprendre votre besoin et vos contraintes. Nous définissons ensemble le périmètre, les étapes et les livrables. Lorsque le projet s'y prête, nous proposons un forfait. Vous savez ce qui est prévu et gardez la maîtrise de vos données et des éléments convenus au contrat.</p>
+<!-- ===================== COMMENT NOUS TRAVAILLONS ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <h2>On échange, on cadre, puis on avance sur du concret.</h2>
+      <p>Nous commençons par comprendre votre besoin et vos contraintes. Nous définissons ensemble le périmètre, les étapes et les livrables. Lorsque le projet s'y prête, nous proposons un forfait. Vous savez ce qui est prévu et gardez la maîtrise de vos données et des éléments convenus au contrat.</p>
     </div>
     <div class="etapes reveal" aria-label="Méthode en quatre étapes">
       <div class="etape"><b>Échange et cadrage</b><span>Identifier le problème, les contraintes et la bonne réponse technique.</span></div>
@@ -433,35 +421,39 @@
 </section>
 
 <!-- ===================== À PROPOS ===================== -->
-<section id="a-propos">
-  <div class="wrap apropos">
-    <div class="reveal">
-      <div class="surtitre"><span class="mono"></span>À propos</div>
-      <h2>Roymata Soft.</h2>
-      <p class="intro" style="margin-bottom:18px">Fondée en 2026, Roymata Soft est une société française qui conçoit et édite ses propres applications, notamment Klipstone et HaulTour. Nous accompagnons également les entreprises dans la recherche et la mise en œuvre de solutions technologiques : développement sur mesure, intégration de l'IA, architecture et conseil aux équipes techniques. Notre approche est simple : comprendre le problème, choisir les bons outils et rester responsables du résultat.</p>
-      <h3 style="margin:28px 0 10px;font-size:1.3rem">Le fondateur</h3>
-      <p>J'ai commencé à développer des applications web en 1999, puis des applications mobiles en 2001. J'ai ensuite évolué vers la gestion de projets et la direction technique d'un éditeur de solutions de géolocalisation pour les entreprises, racheté en 2013 par un groupe international.</p>
-      <p style="margin-bottom:18px">J'y ai dirigé des équipes de développement, puis des responsables d'équipes répartis dans plusieurs pays européens. J'ai travaillé sur des produits, des budgets, des organisations et des situations clients parfois complexes. En 2026, après une formation à la donnée et à l'IA à l'École polytechnique, j'ai créé Roymata Soft pour mettre cette expérience au service de projets plus variés, avec une manière de travailler plus directe.</p>
+<section id="a-propos" class="alt">
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <h2>Roymata Soft</h2>
+      <p>Fondée en 2026, Roymata Soft est une société française qui conçoit et édite ses propres applications, notamment Klipstone et HaulTour. Nous accompagnons également les entreprises dans la recherche et la mise en œuvre de solutions technologiques : développement sur mesure, intégration de l'IA, architecture et conseil aux équipes techniques. Notre approche est simple : comprendre le problème, choisir les bons outils et rester responsables du résultat.</p>
     </div>
-    <div class="reveal">
-      <div class="convictions">
-        <div><b>L'IA est un outil puissant.</b> Elle nous fait gagner du temps, mais elle ne remplace ni les échanges ni la responsabilité de celui qui livre.</div>
-        <div><b>Ce qui compte, ce n'est pas le nombre de fonctionnalités</b>, mais le problème que l'on résout.</div>
-        <div><b>Nous intégrons le coût de développement et d'exploitation</b> dès les premiers choix.</div>
-        <div><b>La propriété des livrables, l'accès aux données et les conditions de réversibilité</b> sont définis clairement dès le départ.</div>
+    <div class="apropos reveal">
+      <div>
+        <h3>Le fondateur</h3>
+        <p>J'ai commencé à développer des applications web en 1999, puis des applications mobiles en 2001. J'ai ensuite évolué vers la gestion de projets et la direction technique d'un éditeur de solutions de géolocalisation pour les entreprises, racheté en 2013 par un groupe international.</p>
+        <p>J'y ai dirigé des équipes de développement, puis des responsables d'équipes répartis dans plusieurs pays européens. J'ai travaillé sur des produits, des budgets, des organisations et des situations clients parfois complexes. En 2026, après une formation à la donnée et à l'IA à l'École polytechnique, j'ai créé Roymata Soft pour mettre cette expérience au service de projets plus variés, avec une manière de travailler plus directe.</p>
+      </div>
+      <div>
+        <h3>Ce que nous pensons</h3>
+        <ul class="convictions">
+          <li><b>L'IA est un outil puissant.</b> Elle nous fait gagner du temps, mais elle ne remplace ni les échanges ni la responsabilité de celui qui livre.</li>
+          <li><b>Ce qui compte, ce n'est pas le nombre de fonctionnalités</b>, mais le problème que l'on résout.</li>
+          <li><b>Nous intégrons le coût de développement et d'exploitation</b> dès les premiers choix.</li>
+          <li><b>La propriété des livrables, l'accès aux données et les conditions de réversibilité</b> sont définis clairement dès le départ.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===================== CONTACT ===================== -->
-<section id="contact" class="alt">
+<section id="contact">
   <div class="wrap">
-    <div class="surtitre"><span class="mono"></span>Contact</div>
-    <h2>Parlons de ce que vous souhaitez faire.</h2>
-    <p class="intro">Vous avez un problème à résoudre, une idée à concrétiser ou un projet technique qui n'avance pas comme prévu ? Décrivez-nous votre contexte, même si la solution n'est pas encore définie. Nous pourrons échanger sur les options possibles et la façon d'avancer.</p>
-
-    <div class="contact reveal" style="margin-top:36px">
+    <div class="sectionhead reveal">
+      <h2>Parlons de ce que vous souhaitez faire.</h2>
+      <p>Vous avez un problème à résoudre, une idée à concrétiser ou un projet technique qui n'avance pas comme prévu ? Décrivez-nous votre contexte, même si la solution n'est pas encore définie. Nous pourrons échanger sur les options possibles et la façon d'avancer.</p>
+    </div>
+    <div class="contact reveal">
       <form action="mailto:contact@roymatasoft.com" method="post" enctype="text/plain" onsubmit="return envoyer(this)">
         <div class="champs">
           <label>Nom<input name="nom" required autocomplete="name"></label>
@@ -474,7 +466,7 @@
           </label>
         </div>
         <label>Message<textarea name="message" required></textarea></label>
-        <div><button class="btn btn-plein" type="submit">Envoyer</button> <span style="font-size:.86rem;color:var(--discret);margin-left:10px"><mark class="a-completer">Ouvre votre messagerie en attendant un service d'envoi</mark></span></div>
+        <div class="actions"><button class="btn primary" type="submit">Envoyer <span>↗</span></button> <span style="font-size:13px;color:var(--discret)"><mark class="a-completer">Ouvre votre messagerie en attendant un service d'envoi</mark></span></div>
       </form>
       <div class="coord">
         <div><small>E-mail</small><mark class="a-completer">contact@roymatasoft.com — adresse à créer</mark></div>
@@ -488,11 +480,10 @@
 </main>
 
 <footer>
-  <div class="filigrane" aria-hidden="true"></div>
   <div class="wrap">
     <div class="edites">
       <div class="edites-titre">
-        <div class="surtitre"><span class="mono"></span>Édités par Roymata Soft</div>
+        <div class="eyebrow">Édités par Roymata Soft</div>
         <p>Nous développons aussi nos propres produits. Klipstone et HaulTour illustrent notre façon de concevoir, tester et faire évoluer une idée.</p>
       </div>
       <div class="edite">
@@ -534,14 +525,12 @@
     location.href='mailto:contact@roymatasoft.com?subject='+encodeURIComponent('Contact roymatasoft.com — '+d.get('besoin'))+'&body='+encodeURIComponent(corps);
     return false;
   }
-  // Apparition au défilement
   (function(){
     var els=document.querySelectorAll('.reveal');
     if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
     var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}})},{rootMargin:'0px 0px -10% 0px',threshold:.12});
     els.forEach(function(e){io.observe(e)});
   })();
-  // En-tête : filet dès qu'on défile
   (function(){var h=document.getElementById('entete');function m(){h.classList.toggle('defile',scrollY>8)}addEventListener('scroll',m,{passive:true});m();})();
 </script>
 </body>
