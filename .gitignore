@@ -6,3 +6,4 @@ PROPOSITION-*.md
 # Fichiers système
 Thumbs.db
 .DS_Store
+*.docx
