@@ -524,7 +524,7 @@
   }
   // Envoi du formulaire. Avec SERVICE_URL, le message part vers le service de contact (Cloud Run, Europe) ;
   // sans, ou si le service ne répond pas, la messagerie du visiteur s'ouvre avec le message pré-rempli.
-  var SERVICE_URL='';
+  var SERVICE_URL='https://roymata-contact-196532247688.europe-west1.run.app';
   var T0=Date.now();
   function parMessagerie(d){
     var corps='Nom : '+d.get('nom')+'\nSociété : '+d.get('societe')+'\nE-mail : '+d.get('email')+'\nBesoin : '+d.get('besoin')+'\n\n'+d.get('message');
