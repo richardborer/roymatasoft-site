@@ -119,9 +119,12 @@
   /* ===== Accueil ===== */
   /* Accueil : la photo d'origine de la sculpture, fond, lumière et ombre compris, étirée en image de fond ;
      la sculpture nette est calée sur le bord droit de la colonne de contenu. */
-  .hero{min-height:650px;position:relative;display:flex;align-items:center;padding:0;border-top:0;
-    background:url(assets/img/hero-fond.webp) no-repeat right max(0px,calc(50% - 650px)) center / auto 100%,
-      radial-gradient(ellipse at 24% 30%,var(--halo-2) 0%,transparent 53%),#E8D5C1}
+  .hero{height:650px;position:relative;display:flex;align-items:center;padding:0;border-top:0;
+    /* image 2600 x 1000 affichée à 650 px de haut, soit 1690 px de large ; la sculpture finit 1495 px après son bord gauche.
+       On place ce bord gauche à (50vw - 845px) pour que la sculpture finisse au bord droit de la colonne de 1300 px,
+       sans jamais dépasser le bord de l'écran (100vw - 1495px). Pas de pourcentage : il serait relatif à (conteneur - image). */
+    background:url(assets/img/hero-fond.webp) no-repeat min(50vw - 845px, 100vw - 1495px) center / auto 100%,
+      linear-gradient(90deg,#E7D4C0 0%,#E2CDB7 55%,#D7C2AB 100%)}
   .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--sable) 55%,transparent) 0%,transparent 45%);pointer-events:none}
   .hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--filet);pointer-events:none}
   :root[data-theme="dark"] .hero::before{background:linear-gradient(90deg,rgba(27,25,23,.72) 0%,rgba(27,25,23,.62) 45%,rgba(27,25,23,.35) 100%)}
@@ -131,7 +134,7 @@
   .hero h1{margin:0 0 28px;max-width:785px}
   .hero p.lead{font-size:18px;line-height:1.8;max-width:600px;color:var(--texte);margin:0 0 40px}
   .actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
-  @media (max-width:860px){.hero{min-height:0;background:radial-gradient(ellipse at 84% 24%,var(--halo-1) 0%,transparent 39%),radial-gradient(ellipse at 24% 30%,var(--halo-2) 0%,transparent 53%),var(--sable)}.hero::before{display:none}.herowrap{padding:60px 20px 38px;display:flex;flex-direction:column;align-items:stretch}.eyebrow{font-size:10px;margin-bottom:22px}.hero p.lead{font-size:16px;line-height:1.65}.sculpture{display:flex;position:relative;height:390px;justify-content:center;align-items:center}.sculpture img{width:min(100%,350px);height:420px;object-fit:contain;filter:drop-shadow(0 24px 18px var(--ombre-sculpture))}.sculpture::after{content:"";position:absolute;bottom:7px;width:70%;height:19px;background:var(--sol);filter:blur(15px);z-index:-1}}
+  @media (max-width:860px){.hero{height:auto;min-height:0;background:radial-gradient(ellipse at 84% 24%,var(--halo-1) 0%,transparent 39%),radial-gradient(ellipse at 24% 30%,var(--halo-2) 0%,transparent 53%),var(--sable)}.hero::before{display:none}.herowrap{padding:60px 20px 38px;display:flex;flex-direction:column;align-items:stretch}.eyebrow{font-size:10px;margin-bottom:22px}.hero p.lead{font-size:16px;line-height:1.65}.sculpture{display:flex;position:relative;height:390px;justify-content:center;align-items:center}.sculpture img{width:min(100%,350px);height:420px;object-fit:contain;filter:drop-shadow(0 24px 18px var(--ombre-sculpture))}.sculpture::after{content:"";position:absolute;bottom:7px;width:70%;height:19px;background:var(--sol);filter:blur(15px);z-index:-1}}
 
   /* Bandeau de repères sous l'accueil */
   .reperes{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start}
