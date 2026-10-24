@@ -115,9 +115,12 @@
   /* ===== Accueil ===== */
   /* Accueil : la photo d'origine de la sculpture, fond, lumière et ombre compris, étirée en image de fond ;
      la sculpture nette est calée sur le bord droit de la colonne de contenu. */
-  .hero{min-height:650px;position:relative;display:flex;align-items:center;padding:0;border-top:0;
-    background:url(assets/img/hero-fond.webp) no-repeat right max(0px,calc(50% - 650px)) center / auto 100%,
-      radial-gradient(ellipse at 24% 30%,var(--halo-2) 0%,transparent 53%),#E8D5C1}
+  .hero{height:650px;position:relative;display:flex;align-items:center;padding:0;border-top:0;
+    /* image 2600 x 1000 affichée à 650 px de haut, soit 1690 px de large ; la sculpture finit 1495 px après son bord gauche.
+       On place ce bord gauche à (50vw - 845px) pour que la sculpture finisse au bord droit de la colonne de 1300 px,
+       sans jamais dépasser le bord de l'écran (100vw - 1495px). Pas de pourcentage : il serait relatif à (conteneur - image). */
+    background:url(assets/img/hero-fond.webp) no-repeat min(50vw - 845px, 100vw - 1495px) center / auto 100%,
+      linear-gradient(90deg,#E7D4C0 0%,#E2CDB7 55%,#D7C2AB 100%)}
   .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--sable) 55%,transparent) 0%,transparent 45%);pointer-events:none}
   .hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--filet);pointer-events:none}
   :root[data-theme="dark"] .hero::before{background:linear-gradient(90deg,rgba(27,25,23,.72) 0%,rgba(27,25,23,.62) 45%,rgba(27,25,23,.35) 100%)}
@@ -127,7 +130,7 @@
   .hero h1{margin:0 0 28px;max-width:785px}
   .hero p.lead{font-size:18px;line-height:1.8;max-width:600px;color:var(--texte);margin:0 0 40px}
   .actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
-  @media (max-width:860px){.hero{min-height:0;background:radial-gradient(ellipse at 84% 24%,var(--halo-1) 0%,transparent 39%),radial-gradient(ellipse at 24% 30%,var(--halo-2) 0%,transparent 53%),var(--sable)}.hero::before{display:none}.herowrap{padding:60px 20px 38px;display:flex;flex-direction:column;align-items:stretch}.eyebrow{font-size:10px;margin-bottom:22px}.hero p.lead{font-size:16px;line-height:1.65}.sculpture{display:flex;position:relative;height:390px;justify-content:center;align-items:center}.sculpture img{width:min(100%,350px);height:420px;object-fit:contain;filter:drop-shadow(0 24px 18px var(--ombre-sculpture))}.sculpture::after{content:"";position:absolute;bottom:7px;width:70%;height:19px;background:var(--sol);filter:blur(15px);z-index:-1}}
+  @media (max-width:860px){.hero{height:auto;min-height:0;background:radial-gradient(ellipse at 84% 24%,var(--halo-1) 0%,transparent 39%),radial-gradient(ellipse at 24% 30%,var(--halo-2) 0%,transparent 53%),var(--sable)}.hero::before{display:none}.herowrap{padding:60px 20px 38px;display:flex;flex-direction:column;align-items:stretch}.eyebrow{font-size:10px;margin-bottom:22px}.hero p.lead{font-size:16px;line-height:1.65}.sculpture{display:flex;position:relative;height:390px;justify-content:center;align-items:center}.sculpture img{width:min(100%,350px);height:420px;object-fit:contain;filter:drop-shadow(0 24px 18px var(--ombre-sculpture))}.sculpture::after{content:"";position:absolute;bottom:7px;width:70%;height:19px;background:var(--sol);filter:blur(15px);z-index:-1}}
 
   /* Bandeau de repères sous l'accueil */
   .reperes{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start}
@@ -294,7 +297,7 @@
     <p class="intro" style="margin-bottom:28px">En résumé : ce site ne dépose aucun cookie, n'utilise aucun outil de mesure d'audience ni aucun traceur, et ne charge aucune ressource depuis un service tiers. Les seules données que nous recevons sont celles que vous nous écrivez.</p>
 
     <h2>Responsable du traitement</h2>
-    <p>Roymata Soft, SAS au capital de 10 000 €, 74 rue du Bournard, 92700 Colombes, représentée par son président. Contact : <mark class="a-completer">contact@roymatasoft.com — adresse à créer</mark>.</p>
+    <p>Roymata Soft, SAS au capital de 10 000 €, représentée par son président ; coordonnées complètes dans les <a href="../mentions-legales/">mentions légales</a>. Contact : <a href="mailto:contact@roymatasoft.fr">contact@roymatasoft.fr</a>.</p>
 
     <h2>Ce que le site ne fait pas</h2>
     <ul>
@@ -319,7 +322,7 @@
     <p>Comme tout site, les pages sont servies par un hébergeur, GitHub, Inc. (service GitHub Pages, États-Unis), qui peut enregistrer des journaux techniques (adresse IP, pages consultées, navigateur) pour la sécurité et le bon fonctionnement du service. Roymata Soft n'a pas accès à ces journaux et ne les exploite pas. GitHub, Inc. est certifié au titre du cadre de protection des données UE–États-Unis (Data Privacy Framework) ; sa politique est consultable sur <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">docs.github.com</a>.</p>
 
     <h2>Vos droits</h2>
-    <p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité sur vos données, ainsi que du droit de définir des directives sur leur sort après votre décès. Pour l'exercer, écrivez à <mark class="a-completer">contact@roymatasoft.com — adresse à créer</mark> en précisant votre demande ; une réponse vous sera apportée dans un délai d'un mois. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la CNIL, 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, <a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>.</p>
+    <p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité sur vos données, ainsi que du droit de définir des directives sur leur sort après votre décès. Pour l'exercer, écrivez à <a href="mailto:contact@roymatasoft.fr">contact@roymatasoft.fr</a> en précisant votre demande ; une réponse vous sera apportée dans un délai d'un mois. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la CNIL, 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, <a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>.</p>
 
     <h2>Modifications</h2>
     <p>Cette politique peut évoluer, notamment si de nouveaux services sont ajoutés au site. La date de mise à jour figure en haut de page.</p>
@@ -353,8 +356,8 @@
       </div>
     </div>
     <div class="legal">
-      Roymata Soft · SAS au capital de 10 000 € · Siège : 74 rue du Bournard, 92700 Colombes · RCS Nanterre 130 481 070 · Hébergeur : GitHub, Inc.<br>
-      Éditeur de HaulTour et de Klipstone · © 2026 Roymata Soft
+      Roymata Soft · SAS au capital de 10 000 € · RCS Nanterre 130 481 070<br>
+      © 2026 Roymata Soft
     </div>
   </div>
 </footer>
@@ -367,10 +370,28 @@
     r.setAttribute('data-theme',t);
     try{localStorage.setItem('theme',t);}catch(e){}
   }
-  function envoyer(f){
-    var d=new FormData(f);
+  // Envoi du formulaire. Avec SERVICE_URL, le message part vers le service de contact (Cloud Run, Europe) ;
+  // sans, ou si le service ne répond pas, la messagerie du visiteur s'ouvre avec le message pré-rempli.
+  var SERVICE_URL='';
+  var T0=Date.now();
+  function parMessagerie(d){
     var corps='Nom : '+d.get('nom')+'\nSociété : '+d.get('societe')+'\nE-mail : '+d.get('email')+'\nBesoin : '+d.get('besoin')+'\n\n'+d.get('message');
-    location.href='mailto:contact@roymatasoft.com?subject='+encodeURIComponent('Contact roymatasoft.com — '+d.get('besoin'))+'&body='+encodeURIComponent(corps);
+    location.href='mailto:contact@roymatasoft.fr?subject='+encodeURIComponent('Contact roymatasoft.com — '+d.get('besoin'))+'&body='+encodeURIComponent(corps);
+  }
+  function envoyer(f){
+    var d=new FormData(f), etat=document.getElementById('etat-envoi');
+    if(!SERVICE_URL){parMessagerie(d);return false;}
+    var b=f.querySelector('button[type=submit]'); b.disabled=true; etat.textContent='Envoi en cours…';
+    var corps={nom:d.get('nom'),societe:d.get('societe'),email:d.get('email'),besoin:d.get('besoin'),message:d.get('message'),site_web:d.get('site_web')||'',t0:T0};
+    fetch(SERVICE_URL+'/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(corps)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok&&j.ok,j:j};});})
+      .then(function(res){
+        if(res.ok){f.reset();T0=Date.now();etat.textContent='Message envoyé. Nous vous répondons rapidement.';}
+        else if(res.j&&res.j.erreur==='trop_de_messages'){etat.textContent='Trop de messages pour le moment. Réessayez un peu plus tard.';}
+        else{etat.textContent='Envoi impossible depuis le site : votre messagerie va s\'ouvrir.';parMessagerie(d);}
+      })
+      .catch(function(){etat.textContent='Envoi impossible depuis le site : votre messagerie va s\'ouvrir.';parMessagerie(d);})
+      .finally(function(){b.disabled=false;});
     return false;
   }
   (function(){

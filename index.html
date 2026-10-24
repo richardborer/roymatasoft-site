@@ -457,7 +457,7 @@
       <p>Vous avez un problème à résoudre, une idée à concrétiser ou un projet technique qui n'avance pas comme prévu ? Décrivez-nous votre contexte, même si la solution n'est pas encore définie. Nous pourrons échanger sur les options possibles et la façon d'avancer.</p>
     </div>
     <div class="contact reveal">
-      <form action="mailto:contact@roymatasoft.com" method="post" enctype="text/plain" onsubmit="return envoyer(this)">
+      <form action="mailto:contact@roymatasoft.fr" method="post" enctype="text/plain" onsubmit="return envoyer(this)">
         <div class="champs">
           <label>Nom<input name="nom" required autocomplete="name"></label>
           <label>Société<input name="societe" autocomplete="organization"></label>
@@ -469,12 +469,12 @@
           </label>
         </div>
         <label>Message<textarea name="message" required></textarea></label>
-        <div class="actions"><button class="btn primary" type="submit">Envoyer <span>↗</span></button> <span style="font-size:13px;color:var(--discret)"><mark class="a-completer">Ouvre votre messagerie en attendant un service d'envoi</mark></span></div>
+        <input type="text" name="site_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <div class="actions"><button class="btn primary" type="submit">Envoyer <span>↗</span></button> <span id="etat-envoi" role="status" aria-live="polite" style="font-size:13px;color:var(--discret)"></span></div>
       </form>
       <div class="coord">
-        <div><small>E-mail</small><mark class="a-completer">contact@roymatasoft.com — adresse à créer</mark></div>
-        <div><small>LinkedIn</small><mark class="a-completer">lien du profil à ajouter</mark></div>
-        <div><small>Adresse</small>74 rue du Bournard, 92700 Colombes</div>
+        <div><small>E-mail</small><a href="mailto:contact@roymatasoft.fr">contact@roymatasoft.fr</a></div>
+        <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/richard-b-53a664/" rel="noopener">linkedin.com/in/richard-b-53a664</a></div>
       </div>
     </div>
   </div>
@@ -508,8 +508,8 @@
       </div>
     </div>
     <div class="legal">
-      Roymata Soft · SAS au capital de 10 000 € · Siège : 74 rue du Bournard, 92700 Colombes · RCS Nanterre 130 481 070 · Hébergeur : GitHub, Inc.<br>
-      Éditeur de HaulTour et de Klipstone · © 2026 Roymata Soft
+      Roymata Soft · SAS au capital de 10 000 € · RCS Nanterre 130 481 070<br>
+      © 2026 Roymata Soft
     </div>
   </div>
 </footer>
@@ -522,10 +522,28 @@
     r.setAttribute('data-theme',t);
     try{localStorage.setItem('theme',t);}catch(e){}
   }
-  function envoyer(f){
-    var d=new FormData(f);
+  // Envoi du formulaire. Avec SERVICE_URL, le message part vers le service de contact (Cloud Run, Europe) ;
+  // sans, ou si le service ne répond pas, la messagerie du visiteur s'ouvre avec le message pré-rempli.
+  var SERVICE_URL='';
+  var T0=Date.now();
+  function parMessagerie(d){
     var corps='Nom : '+d.get('nom')+'\nSociété : '+d.get('societe')+'\nE-mail : '+d.get('email')+'\nBesoin : '+d.get('besoin')+'\n\n'+d.get('message');
-    location.href='mailto:contact@roymatasoft.com?subject='+encodeURIComponent('Contact roymatasoft.com — '+d.get('besoin'))+'&body='+encodeURIComponent(corps);
+    location.href='mailto:contact@roymatasoft.fr?subject='+encodeURIComponent('Contact roymatasoft.com — '+d.get('besoin'))+'&body='+encodeURIComponent(corps);
+  }
+  function envoyer(f){
+    var d=new FormData(f), etat=document.getElementById('etat-envoi');
+    if(!SERVICE_URL){parMessagerie(d);return false;}
+    var b=f.querySelector('button[type=submit]'); b.disabled=true; etat.textContent='Envoi en cours…';
+    var corps={nom:d.get('nom'),societe:d.get('societe'),email:d.get('email'),besoin:d.get('besoin'),message:d.get('message'),site_web:d.get('site_web')||'',t0:T0};
+    fetch(SERVICE_URL+'/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(corps)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok&&j.ok,j:j};});})
+      .then(function(res){
+        if(res.ok){f.reset();T0=Date.now();etat.textContent='Message envoyé. Nous vous répondons rapidement.';}
+        else if(res.j&&res.j.erreur==='trop_de_messages'){etat.textContent='Trop de messages pour le moment. Réessayez un peu plus tard.';}
+        else{etat.textContent='Envoi impossible depuis le site : votre messagerie va s\'ouvrir.';parMessagerie(d);}
+      })
+      .catch(function(){etat.textContent='Envoi impossible depuis le site : votre messagerie va s\'ouvrir.';parMessagerie(d);})
+      .finally(function(){b.disabled=false;});
     return false;
   }
   (function(){
