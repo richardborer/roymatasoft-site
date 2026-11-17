@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roymata Soft — Logiciels, solutions sur mesure et conseil</title>
-<meta name="description" content="Roymata Soft crée ses applications et accompagne les entreprises : développement sur mesure, intégration de l'IA, conseil. 25 ans d'ingénierie logicielle.">
+<title>Roymata Soft — Audit, transition IA et gestion de projet pour les PME</title>
+<meta name="description" content="Roymata Soft accompagne les PME et PMI : audit, transition vers l'IA, gestion de projet. 25 ans de direction technique dans le logiciel et le SaaS.">
 <link rel="canonical" href="https://roymatasoft.com/">
 <meta name="theme-color" content="#F8F5F0" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1B1917" media="(prefers-color-scheme: dark)">
 <meta property="og:site_name" content="Roymata Soft">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:title" content="Roymata Soft — La technologie évolue. L'expérience reste essentielle.">
-<meta property="og:description" content="Édition de logiciels, solutions sur mesure et conseil. Nous partons du besoin, pas de la technologie.">
+<meta property="og:title" content="Roymata Soft — Une PME peut travailler comme une grande équipe.">
+<meta property="og:description" content="Audit, accompagnement de transition et gestion de projet pour les PME et PMI. 25 ans de direction technique, une pratique quotidienne de l'IA.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://roymatasoft.com/">
 <meta property="og:image" content="https://roymatasoft.com/assets/img/partage.jpg">
@@ -19,8 +19,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Roymata Soft : sculpture en croissant, anthracite et bronze">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Roymata Soft — La technologie évolue. L'expérience reste essentielle.">
-<meta name="twitter:description" content="Édition de logiciels, solutions sur mesure et conseil. Nous partons du besoin, pas de la technologie.">
+<meta name="twitter:title" content="Roymata Soft — Une PME peut travailler comme une grande équipe.">
+<meta name="twitter:description" content="Audit, accompagnement de transition et gestion de projet pour les PME et PMI. 25 ans de direction technique, une pratique quotidienne de l'IA.">
 <meta name="twitter:image" content="https://roymatasoft.com/assets/img/partage.jpg">
 <script type="application/ld+json">
 {
@@ -31,7 +31,7 @@
   "url": "https://roymatasoft.com/",
   "logo": "https://roymatasoft.com/assets/logo-noir.svg",
   "image": "https://roymatasoft.com/assets/img/partage.jpg",
-  "description": "Éditeur de logiciels, solutions sur mesure et conseil en ingénierie. Roymata Soft crée ses propres applications et accompagne les entreprises dans leurs projets technologiques.",
+  "description": "Conseil et ingénierie logicielle pour les PME et PMI : audit, accompagnement de transition vers l'IA, gestion de projet.",
   "foundingDate": "2026",
   "vatID": "FR12130481070",
   "email": "contact@roymatasoft.fr",
@@ -233,15 +233,6 @@
   .liste-engagements span{color:var(--graphite);font-size:14px;line-height:1.6}
   @media (max-width:860px){.liste-engagements{grid-template-columns:1fr}.liste-engagements li{border-right:0;margin-right:0;padding:16px 0;border-bottom:1px solid var(--filet)}.liste-engagements li:last-child{border-bottom:0}}
 
-  /* Promesse : bandeau anthracite et bronze */
-  .promesse{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:10px;overflow:hidden;background:#262321;color:#EDE6DC}
-  .promesse div{padding:34px 36px;border-left:1px solid #3B3632}
-  .promesse div:first-child{border-left:0}
-  .promesse b{display:flex;align-items:center;gap:12px;font:500 1.7rem/1.1 Jost,sans-serif;color:#F7F2EA;margin-bottom:10px}
-  .promesse b .mono{color:#C08A63;font-size:1.2rem}
-  .promesse span{color:#C9C0B4;font-size:15px;line-height:1.65}
-  @media (max-width:860px){.promesse{grid-template-columns:1fr}.promesse div{border-left:0;border-top:1px solid #3B3632}.promesse div:first-child{border-top:0}}
-
   /* Étapes */
   .etapes{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:e}
   .etape{position:relative;padding:8px 36px 8px 0;margin-right:36px;border-right:1px solid var(--filet)}
@@ -252,16 +243,18 @@
   @media (max-width:860px){.etapes{grid-template-columns:1fr}.etape{border-right:0;margin:0;padding:18px 0;border-bottom:1px solid var(--filet)}.etape:last-child{border-bottom:0}}
 
   /* ===== À propos ===== */
-  .apropos{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:start}
+  .apropos{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
   .apropos .intro{font-size:17px;line-height:1.75;color:var(--texte)}
   .apropos h3{font-size:1.25rem;margin:28px 0 10px}
   .apropos h3::before{content:"";display:block;background:var(--accent);width:42px;height:2px;margin-bottom:16px}
-  .apropos p{font-size:15px;line-height:1.75;color:var(--texte)}
+  .apropos p{font-size:15px;line-height:1.75;color:var(--texte);text-wrap:pretty}
   .convictions{list-style:none;margin:0;padding:0;border-top:1px solid var(--filet)}
-  .convictions li{padding:18px 0 18px 30px;border-bottom:1px solid var(--filet);position:relative;font-size:15px;line-height:1.65;color:var(--texte)}
+  .convictions li{display:grid;grid-template-columns:150px 1fr;column-gap:20px;align-items:baseline;padding:18px 0 18px 30px;border-bottom:1px solid var(--filet);position:relative;font-size:15px;line-height:1.65;color:var(--texte);text-wrap:pretty}
   .convictions li::before{content:"";position:absolute;left:0;top:23px;width:15px;height:16px;background:var(--accent);-webkit-mask:var(--mono-url) no-repeat center/contain;mask:var(--mono-url) no-repeat center/contain}
   .convictions b{color:var(--encre);font-weight:600}
+  @media (min-width:861px){.apropos p,.convictions li span{text-align:justify;hyphens:auto}}
   @media (max-width:860px){.apropos{grid-template-columns:1fr;gap:36px}}
+  @media (max-width:560px){.convictions li{grid-template-columns:1fr;row-gap:2px}}
 
   /* ===== Contact ===== */
   .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}
@@ -278,18 +271,10 @@
 
   /* ===== Pied ===== */
   footer{padding:56px 0 36px;color:var(--discret);font-size:14px;border-top:1px solid var(--filet);background:var(--surface)}
-  footer .edites{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:40px;padding-bottom:40px;margin-bottom:36px;border-bottom:1px solid var(--filet)}
-  footer .edites-titre p{color:var(--texte);font-size:15px;line-height:1.7;margin:0}
-  footer .edites-titre .eyebrow{margin-bottom:18px}
-  footer .edite{display:flex;flex-direction:column;gap:6px;padding-left:28px;border-left:1px solid var(--filet)}
-  footer .edite b{font:500 1.25rem/1.2 Jost,sans-serif;color:var(--encre)}
-  footer .edite span{color:var(--texte);font-size:14px;line-height:1.6}
-  footer .edite em{font-style:normal;color:var(--discret);font-size:13px;margin-top:auto;padding-top:8px}
   footer .haut{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;margin-bottom:22px}
   footer .liens{display:flex;flex-wrap:wrap;gap:6px 24px}
   footer .liens a{color:var(--texte)}
   footer .legal{line-height:1.8;font-size:13px}
-  @media (max-width:860px){footer .edites{grid-template-columns:1fr;gap:24px}footer .edite{padding-left:0;border-left:0;padding-top:18px;border-top:1px solid var(--filet)}}
 </style>
 </head>
 <body>
@@ -316,12 +301,12 @@
 <section class="hero">
   <div class="herowrap">
     <div class="copy">
-      <div class="eyebrow">Édition de logiciels · Solutions sur mesure · Conseil</div>
-      <h1>La technologie évolue.<br>L'expérience reste essentielle.</h1>
-      <p class="lead">Roymata Soft crée ses propres applications et accompagne les entreprises dans leurs projets technologiques.<br>Nous partons du besoin, pas de la technologie.</p>
+      <div class="eyebrow">Audit · Accompagnement de transition · Gestion de projet</div>
+      <h1>Une PME peut travailler comme une grande équipe.</h1>
+      <p class="lead">L'IA met désormais à sa portée une qualité et une facilité de maintenance réservées hier aux grandes organisations.<br>Roymata Soft vous y conduit : audit, accompagnement de transition et gestion de projet, avec vingt-cinq ans de direction technique.</p>
       <div class="actions">
-        <a href="#contact" class="btn primary">Parler de votre projet <span>↗</span></a>
-        <a href="#methode" class="btn">Notre méthode <span>→</span></a>
+        <a href="#contact" class="btn primary">Demander un premier entretien <span>↗</span></a>
+        <a href="#methode" class="btn">Voir ce que l'IA change <span>→</span></a>
       </div>
     </div>
     <div class="sculpture">
@@ -332,9 +317,9 @@
 
 <section class="alt" style="padding:44px 0">
   <div class="wrap reperes reveal">
-    <p>Développement sur mesure, intégration de l'IA, conseil ou évolution d'un outil existant : notre approche s'appuie sur 25 ans d'expérience en ingénierie logicielle et sur l'IA pour avancer plus vite, avec le même souci de qualité et de maîtrise des coûts.</p>
-    <div class="repere"><b>25 <em>ans</em></b><span>dans le logiciel, du développement à la direction d'équipes internationales</span></div>
-    <div class="repere"><b><em>+</em>IA</b><span>L'IA nous aide à produire, tester et documenter plus efficacement. Les décisions restent humaines.</span></div>
+    <p>Un système d'information à évaluer avant d'investir, une équipe à faire passer à l'IA, un projet qui dérape, un prestataire à remplacer : voilà ce que nous traitons.</p>
+    <div class="repere"><b>25 <em>ans</em></b><span>dans le logiciel et les produits SaaS, jusqu'à la direction de l'ingénierie d'un groupe américain</span></div>
+    <div class="repere"><b><em>+</em>IA</b><span>Pratiquée chaque jour dans notre propre travail, et certifiée : « Diriger avec la Data et l'IA », École polytechnique, 2026</span></div>
   </div>
 </section>
 
@@ -342,42 +327,41 @@
 <section id="methode">
   <div class="wrap">
     <div class="sectionhead reveal">
-      <h2>Ce que l'IA change dans notre métier</h2>
-      <p>Les outils évoluent vite. Les enjeux, eux, restent les mêmes : comprendre un besoin, faire les bons choix et livrer des solutions utiles et durables.</p>
+      <h2>Ce que l'IA change pour une petite organisation</h2>
+      <p>Un logiciel fiable demandait du monde : des testeurs, des rédacteurs, une équipe d'exploitation. L'IA assure aujourd'hui une grande part de ce travail, à condition que quelqu'un sache la diriger.</p>
     </div>
     <div class="cards reveal">
-      <article><span class="glyphe">↗</span><h3>Des outils plus puissants</h3><p>L'IA nous permet d'aller plus vite et d'explorer de nouvelles possibilités.</p></article>
-      <article><span class="glyphe">◎</span><h3>Des besoins plus complexes</h3><p>Les projets demandent de comprendre les données, les intégrations et les contraintes métier.</p></article>
-      <article><span class="glyphe">◇</span><h3>La même exigence</h3><p>L'expérience reste déterminante dans les choix et la qualité du résultat.</p></article>
+      <article><span class="glyphe">↗</span><h3>La qualité ne dépend plus de la taille</h3><p>Tests systématiques, documentation tenue à jour, relecture de chaque changement : ce niveau n'exige plus une grande équipe.</p></article>
+      <article><span class="glyphe">◎</span><h3>Il y a moins à maintenir</h3><p>Moins de code, moins d'outils empilés, des systèmes mieux documentés : la maintenance pèse moins sur vos équipes et sur votre budget.</p></article>
+      <article><span class="glyphe">◇</span><h3>L'expérience décide du résultat</h3><p>L'IA exécute ce qu'on lui demande. Savoir quoi demander et juger ce qu'elle rend suppose d'avoir dirigé des équipes d'ingénierie.</p></article>
     </div>
 
     <div class="epoques reveal">
-      <h3 class="sous-titre">De nouvelles possibilités, sans changer les fondamentaux.</h3>
-      <p class="intro">L'IA change concrètement notre façon de travailler. Certaines tâches prennent moins de temps, ce qui laisse davantage de place pour comprendre le besoin, faire les bons choix et tester les solutions. Mais un projet réussi demande toujours de l'expérience, de la méthode et quelqu'un qui assume les décisions.</p>
+      <h3 class="sous-titre">Ce qui exigeait une grande équipe ne l'exige plus.</h3>
       <div class="eres" role="list">
         <article class="ere" role="listitem">
           <span class="point">1.0 · L'ARTISANAT</span>
           <figure class="scene"><img src="assets/img/ere-1.webp" alt="Un développeur seul devant son écran, un sablier sur le bureau" loading="eager" decoding="async"></figure>
-          <h3>Au départ, des outils et beaucoup de travail manuel.</h3>
-          <p>Le développement reposait largement sur le travail individuel, avec des délais longs et une forte dépendance aux personnes.</p>
+          <h3>Hier, tout reposait sur quelques développeurs.</h3>
+          <p>Les délais étaient longs, la qualité inégale, et l'outil dépendait de ceux qui l'avaient écrit.</p>
           <div class="budget" aria-hidden="true"><i style="--p:50%"></i></div>
         </article>
         <article class="ere" role="listitem">
           <span class="point">2.0 · L'INDUSTRIE</span>
           <figure class="scene"><img src="assets/img/ere-2.webp" alt="Une équipe nombreuse en réunion devant un tableau couvert de post-it et de schémas" loading="eager" decoding="async"></figure>
-          <h3>Puis des équipes plus grandes et des projets mieux structurés.</h3>
-          <p>Les méthodes et les équipes ont permis de réaliser des projets plus ambitieux. Elles ont aussi ajouté des échanges, des validations et du temps de coordination.</p>
+          <h3>Puis la qualité est devenue l'affaire des grandes équipes.</h3>
+          <p>Tester, documenter et exploiter demandait du monde et beaucoup de coordination. Seules les grandes organisations pouvaient se l'offrir.</p>
           <div class="budget" aria-hidden="true"><i style="--p:30%"></i></div>
         </article>
         <article class="ere actuelle" role="listitem">
           <span class="point">3.0 · L'IA SOUS DIRECTION</span>
           <figure class="scene scene-3"><img src="assets/img/ere-3.webp" alt="Un de nos ingénieurs désigne le monogramme Roymata Soft, relié à six agents : spécification, développement, qualité, déploiement, exploitation, maintenance" loading="eager" decoding="async"><span class="phase" style="left:42.5%;top:24.3%">Spécification</span><span class="phase" style="left:85.1%;top:24.3%">Développement</span><span class="phase" style="left:39.9%;top:45.8%">Qualité</span><span class="phase" style="left:90.3%;top:46.8%">Déploiement</span><span class="phase" style="left:43.4%;top:68.3%">Exploitation</span><span class="phase" style="left:87.0%;top:70.2%">Maintenance</span></figure>
-          <h3>Aujourd'hui, l'IA prend en charge une partie de l'exécution.</h3>
-          <p>Nous utilisons des outils d'IA pour accélérer le développement, les tests et la documentation. L'analyse du besoin, les choix techniques et la validation du résultat restent sous notre responsabilité.</p>
+          <h3>Aujourd'hui, une petite équipe expérimentée dirige le travail de l'IA.</h3>
+          <p>Elle atteint la qualité d'une grande, avec moins de coordination et moins de maintenance.</p>
           <div class="budget" aria-hidden="true"><i style="--p:85%"></i></div>
         </article>
       </div>
-      <p class="legende-budget"><i></i> Illustration de la place du travail de réalisation et de la coordination dans différentes organisations. Schéma indicatif, non chiffré.</p>
+      <p class="legende-budget"><i></i> Part de la réalisation et de la coordination selon l'organisation. Schéma indicatif, non chiffré.</p>
     </div>
   </div>
 </section>
@@ -386,54 +370,49 @@
 <section class="alt">
   <div class="wrap">
     <div class="sectionhead reveal">
-      <h2>Un prototype rapide, c'est bien. Une solution fiable, c'est mieux.</h2>
-      <p>L'IA permet d'obtenir très vite un premier résultat. Le vrai travail commence lorsqu'il faut intégrer une solution à son environnement, protéger les données, prévoir son exploitation et la faire évoluer. Nous utilisons l'IA au quotidien, avec des choix techniques vérifiés et une responsabilité clairement assumée.</p>
+      <h2>Nous partons de votre besoin, jamais d'un outil à placer.</h2>
+      <p>Roymata Soft n'a aucune plateforme à vous installer et ne perçoit aucune commission sur les outils qu'elle recommande. Les listes ci-dessous s'adressent à votre DSI.</p>
     </div>
 
     <div class="piliers reveal">
       <article class="pilier">
         <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></span><span class="num">01</span></div>
-        <h3>Des choix techniques adaptés à votre projet</h3>
-        <p>Une solution doit répondre au besoin d'aujourd'hui sans compliquer demain. Nous choisissons une architecture en fonction de l'usage, du volume de données, du budget et des contraintes d'exploitation. Notre expérience des plateformes SaaS et des systèmes de données nous aide à éviter les choix coûteux à long terme.</p>
-        <ul class="pratiques"><li>Architectures cloud-native, serverless lorsque pertinent</li><li>Dimensionnement et FinOps dès la conception</li><li>Données : PostgreSQL, PostGIS, pipelines reproductibles</li><li>Décisions d'architecture documentées (ADR)</li></ul>
+        <h3>Audit : savoir où vous en êtes avant de décider</h3>
+        <p>Nous examinons votre système d'information, vos logiciels, vos contrats et votre organisation technique. Vous recevez un état des lieux écrit, les risques classés par gravité et un plan d'action par priorités.</p>
+        <ul class="pratiques"><li>Système d'information, logiciels et contrats de prestation</li><li>Due diligence technique avant une acquisition ou une cession</li><li>Dette technique, sécurité, coûts d'hébergement et de licences</li><li>Rapport écrit, restitué à la direction</li></ul>
       </article>
       <article class="pilier">
         <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3.5v5c0 5-3.4 8.6-8 9.5-4.6-.9-8-4.5-8-9.5v-5z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="num">02</span></div>
-        <h3>Des solutions prêtes à être utilisées et maintenues</h3>
-        <p>Nous ne nous arrêtons pas à une démonstration qui fonctionne. Tests, sécurité, déploiement, documentation et suivi font partie du travail, que le code ait été écrit avec ou sans l'aide de l'IA.</p>
-        <ul class="pratiques"><li>Spécifications écrites avant le code</li><li>Tests automatisés et revue humaine systématique</li><li>CI/CD, observabilité, journalisation</li><li>Sécurité du code généré : secrets, moindre privilège, dépendances</li></ul>
+        <h3>Transition : faire entrer l'IA dans vos équipes</h3>
+        <p>Nous choisissons avec vous un premier cas d'usage, avec un indicateur de résultat et une date de bilan fixés au départ. Vos équipes sont formées sur leurs propres outils, pour continuer sans nous. La même méthode sert à changer de prestataire ou à intégrer une société rachetée.</p>
+        <ul class="pratiques"><li>Un premier cas d'usage, choisi pour son résultat mesurable</li><li>Indicateurs fixés au départ, bilan à date convenue</li><li>Formation des équipes sur leurs propres outils</li><li>Automatisations hébergées sur vos comptes, jamais sur les nôtres</li></ul>
       </article>
       <article class="pilier">
         <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/><path d="M21 3l-6 6"/></svg></span><span class="num">03</span></div>
-        <h3>Construire quelque chose qui répond à un vrai besoin</h3>
-        <p>Avant de développer, nous cherchons à comprendre qui utilisera la solution, quel problème elle résout et ce qui compte vraiment pour le client. Cette réflexion permet de fixer les priorités, de limiter les fonctions inutiles et, pour un produit commercial, de préparer sa mise sur le marché.</p>
-        <ul class="pratiques"><li>Personae : acheteurs, utilisateurs, décideurs, et ce que chacun attend</li><li>Cadrage orienté valeur, pas liste de fonctions</li><li>Avant-vente, démonstrations, tarification et positionnement</li><li>Mesure de l'usage par persona après la mise en ligne</li></ul>
+        <h3>Gestion de projet : tenir le budget, les délais et les prestataires</h3>
+        <p>Nous conduisons votre projet à vos côtés, du cahier des charges à la mise en service. Nos ingénieurs ont dirigé des équipes internes et externalisées dans plusieurs pays : ils savent ce qu'un prestataire peut tenir.</p>
+        <ul class="pratiques"><li>Cadrage, cahier des charges, consultation des prestataires</li><li>Suivi du budget, des délais et des risques</li><li>Pilotage d'équipes onshore et offshore</li><li>Recette, mise en service et documentation</li></ul>
       </article>
       <article class="pilier">
         <div class="pilier-tete"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.3"/><circle cx="5" cy="18" r="2.3"/><circle cx="19" cy="18" r="2.3"/><circle cx="12" cy="13" r="2.3"/><path d="M12 7.3v3.4M10.2 14.6l-3.5 2M13.8 14.6l3.5 2"/></svg></span><span class="num">04</span></div>
-        <h3>Utiliser l'IA avec méthode</h3>
-        <p>L'IA fait partie de nos outils de travail, mais elle ne décide pas seule. Nous définissons ce qui doit être réalisé, contrôlons les résultats et gardons la maîtrise des coûts et des données. Cette pratique s'appuie aussi sur une formation à la donnée et à l'IA suivie à l'École polytechnique en 2026.</p>
-        <ul class="pratiques"><li>Spec-driven : l'agent exécute une intention écrite</li><li>Vérification automatique et évaluations continues</li><li>Validation humaine aux étapes critiques</li><li>Coûts d'inférence suivis et plafonnés</li></ul>
+        <h3>Notre pratique de l'IA et de la donnée</h3>
+        <p>Nous appliquons à notre propre travail ce que nous recommandons. Nos ingénieurs écrivent ce qui doit être fait, l'IA l'exécute, puis des contrôles automatiques et une relecture humaine vérifient.</p>
+        <ul class="pratiques"><li>Développement spec-driven, où l'agent exécute une spécification écrite</li><li>Vérification automatique et validation humaine aux étapes critiques</li><li>Coûts d'inférence suivis et plafonnés</li><li>Données géographiques : PostgreSQL, PostGIS, cartographie numérique</li></ul>
       </article>
     </div>
 
     <div class="engagements reveal">
-      <p class="intro">Notre différence : une structure légère, une expérience de l'ingénierie et des outils d'IA intégrés au travail quotidien. Plutôt que d'opposer des méthodes, voici nos engagements concrets.</p>
+      <p class="intro">Six engagements écrits dans chaque proposition.</p>
       <ul class="liste-engagements">
-        <li><b>Cadrage</b><span>Un périmètre écrit et partagé avant de développer.</span></li>
-        <li><b>Validation</b><span>Des tests et une relecture avant chaque livraison.</span></li>
-        <li><b>Sécurité</b><span>La protection des données et des accès prévue dès la conception.</span></li>
-        <li><b>Délais convenus</b><span>Des étapes datées ensemble, adaptées à la taille du projet.</span></li>
-        <li><b>Documentation</b><span>Ce qu'il faut pour comprendre, exploiter et faire évoluer la solution.</span></li>
-        <li><b>Transmission</b><span>Livrables, accès et conditions de reprise définis au contrat.</span></li>
+        <li><b>Besoin d'abord</b><span>Aucune plateforme maison à installer, aucune commission sur les outils recommandés.</span></li>
+        <li><b>Audit préalable</b><span>Nous examinons votre situation avant de proposer quoi que ce soit.</span></li>
+        <li><b>Résultat mesuré</b><span>Chaque mission a un indicateur fixé au départ et une date de bilan.</span></li>
+        <li><b>Livrable convenu</b><span>Le devis décrit ce que vous recevez, pas seulement un nombre de jours.</span></li>
+        <li><b>Transmission</b><span>Code, données et automatisations restent sur vos comptes, avec leur documentation.</span></li>
+        <li><b>Formation</b><span>Vos équipes sont formées avant notre départ.</span></li>
       </ul>
     </div>
 
-    <div class="promesse reveal">
-      <div><b><span class="mono"></span>Mieux</b><span>Des choix techniques réfléchis, des tests et une documentation prévus dès le départ.</span></div>
-      <div><b><span class="mono"></span>Plus vite</b><span>Une première version rapidement, puis des ajustements réguliers au fil de vos retours.</span></div>
-      <div><b><span class="mono"></span>Moins cher</b><span>Une organisation resserrée et des outils adaptés pour consacrer le budget à ce qui compte pour le projet.</span></div>
-    </div>
   </div>
 </section>
 
@@ -441,14 +420,14 @@
 <section>
   <div class="wrap">
     <div class="sectionhead reveal">
-      <h2>On échange, on cadre, puis on avance sur du concret.</h2>
-      <p>Nous commençons par comprendre votre besoin et vos contraintes. Nous définissons ensemble le périmètre, les étapes et les livrables. Lorsque le projet s'y prête, nous proposons un forfait. Vous savez ce qui est prévu et gardez la maîtrise de vos données et des éléments convenus au contrat.</p>
+      <h2>Une mission avance en quatre étapes, que vous validez une à une.</h2>
+      <p>Vous recevez d'abord une proposition écrite : le périmètre, les livrables, l'indicateur de résultat et le prix. Rien ne commence sans votre accord.</p>
     </div>
     <div class="etapes reveal" aria-label="Méthode en quatre étapes">
-      <div class="etape"><b>Échange et cadrage</b><span>Identifier le problème, les contraintes et la bonne réponse technique.</span></div>
-      <div class="etape"><b>Première version</b><span>Montrer rapidement quelque chose de concret lorsque le projet le permet.</span></div>
-      <div class="etape"><b>Ajustements</b><span>Avancer par étapes avec vos retours.</span></div>
-      <div class="etape"><b>Livraison et suivi</b><span>Mettre en service, documenter et organiser la suite.</span></div>
+      <div class="etape"><b>Premier entretien</b><span>Vous exposez votre situation. Une heure, sans engagement.</span></div>
+      <div class="etape"><b>Audit</b><span>Un état des lieux écrit et un plan d'action par priorités.</span></div>
+      <div class="etape"><b>Premier résultat</b><span>Un cas d'usage précis, mené à son terme et mesuré.</span></div>
+      <div class="etape"><b>Transmission</b><span>Vos équipes sont formées, tout est documenté et remis.</span></div>
     </div>
   </div>
 </section>
@@ -458,21 +437,23 @@
   <div class="wrap">
     <div class="sectionhead reveal">
       <h2>Roymata Soft</h2>
-      <p>Fondée en 2026, Roymata Soft est une société française qui conçoit et édite ses propres applications, notamment Klipstone et HaulTour. Nous accompagnons également les entreprises dans la recherche et la mise en œuvre de solutions technologiques : développement sur mesure, intégration de l'IA, architecture et conseil aux équipes techniques. Notre approche est simple : comprendre le problème, choisir les bons outils et rester responsables du résultat.</p>
+      <p>Roymata Soft est une société française de conseil et d'ingénierie logicielle, créée en 2026. Elle accompagne les PME et PMI par l'audit, la transition vers l'IA et la gestion de projet. Elle développe aussi ses propres applications, Klipstone et HaulTour, où elle éprouve ses méthodes avant de les recommander.</p>
     </div>
     <div class="apropos reveal">
       <div>
         <h3>Le fondateur</h3>
-        <p>J'ai commencé à développer des applications web en 1999, puis des applications mobiles en 2001. J'ai ensuite évolué vers la gestion de projets et la direction technique d'un éditeur de solutions de géolocalisation pour les entreprises, racheté en 2013 par un groupe international.</p>
-        <p>J'y ai dirigé des équipes de développement, puis des responsables d'équipes répartis dans plusieurs pays européens. J'ai travaillé sur des produits, des budgets, des organisations et des situations clients parfois complexes. En 2026, après une formation à la donnée et à l'IA à l'École polytechnique, j'ai créé Roymata Soft pour mettre cette expérience au service de projets plus variés, avec une manière de travailler plus directe.</p>
+        <p>J'ai commencé à développer des applications web en 1999. J'ai ensuite dirigé la technique d'un éditeur français de logiciels, vécu son rachat par un groupe américain, puis dirigé l'ingénierie de ce groupe dans plusieurs pays.</p>
+        <p>J'ai créé Roymata Soft en 2026 pour mettre cette expérience, et ce que l'IA permet désormais, à la portée d'organisations plus petites. Je suis votre interlocuteur, du premier entretien à la fin de la mission.</p>
       </div>
       <div>
-        <h3>Ce que nous pensons</h3>
+        <h3>Repères</h3>
         <ul class="convictions">
-          <li><b>L'IA est un outil puissant.</b> Elle nous fait gagner du temps, mais elle ne remplace ni les échanges ni la responsabilité de celui qui livre.</li>
-          <li><b>Ce qui compte, ce n'est pas le nombre de fonctionnalités</b>, mais le problème que l'on résout.</li>
-          <li><b>Nous intégrons le coût de développement et d'exploitation</b> dès les premiers choix.</li>
-          <li><b>La propriété des livrables, l'accès aux données et les conditions de réversibilité</b> sont définis clairement dès le départ.</li>
+          <li><b>Expérience</b><span>25 ans dans le logiciel et les produits SaaS.</span></li>
+          <li><b>Direction technique</b><span>Éditeur français de logiciels, jusqu'à la due diligence technique de son rachat par un leader américain.</span></li>
+          <li><b>Ingénierie</b><span>Directeur senior dans ce groupe américain : équipes internationales, internes et externalisées.</span></li>
+          <li><b>Acquisition</b><span>Intégration d'une société après son rachat.</span></li>
+          <li><b>Expertise</b><span>Géospatial et cartographie numérique.</span></li>
+          <li><b>Certification</b><span>« Diriger avec la Data et l'IA »<br>École polytechnique, 2026.</span></li>
         </ul>
       </div>
     </div>
@@ -483,8 +464,8 @@
 <section id="contact">
   <div class="wrap">
     <div class="sectionhead reveal">
-      <h2>Parlons de ce que vous souhaitez faire.</h2>
-      <p>Vous avez un problème à résoudre, une idée à concrétiser ou un projet technique qui n'avance pas comme prévu ? Décrivez-nous votre contexte, même si la solution n'est pas encore définie. Nous pourrons échanger sur les options possibles et la façon d'avancer.</p>
+      <h2>Exposez-nous votre situation.</h2>
+      <p>Quelques lignes suffisent, même si vous ne savez pas encore ce qu'il vous faut. Un de nos ingénieurs vous propose un premier entretien d'une heure, qui ne vous engage à rien.</p>
     </div>
     <div class="contact reveal">
       <form action="mailto:contact@roymatasoft.fr" method="post" enctype="text/plain" onsubmit="return envoyer(this)">
@@ -494,7 +475,7 @@
           <label>E-mail<input name="email" type="email" required autocomplete="email"></label>
           <label>Besoin
             <select name="besoin">
-              <option>Un logiciel ou un site à réaliser</option><option>Un accompagnement de direction technique</option><option>Une équipe à faire passer à l'IA</option><option>Autre</option>
+              <option>Un audit</option><option>Une transition à accompagner</option><option>Un projet à piloter</option><option>Autre</option>
             </select>
           </label>
         </div>
@@ -514,22 +495,6 @@
 
 <footer>
   <div class="wrap">
-    <div class="edites">
-      <div class="edites-titre">
-        <div class="eyebrow">Édités par Roymata Soft</div>
-        <p>Nous développons aussi nos propres produits. Klipstone et HaulTour illustrent notre façon de concevoir, tester et faire évoluer une idée.</p>
-      </div>
-      <div class="edite">
-        <b>Klipstone</b>
-        <span>Ce qui vous intéresse dans une vidéo, en trente secondes. Lieux, produits, recettes, tutoriels, extraits à la seconde près.</span>
-        <em>En développement · iOS et Android</em>
-      </div>
-      <div class="edite">
-        <b>HaulTour</b>
-        <span>Tes marques, ta ville, ta tournée. Plus de 15 000 marques dans 54 pays, et le parcours le plus court pour les enchaîner.</span>
-        <em>Sur le web · bientôt iOS et Android</em>
-      </div>
-    </div>
     <div class="haut">
       <span class="logo" style="width:140px"></span>
       <div class="liens">
