@@ -174,18 +174,8 @@
   .repere span{color:var(--discret);font-size:14px;line-height:1.6;display:block}
   @media (max-width:860px){.reperes{grid-template-columns:1fr;gap:24px}}
 
-  /* ===== Pourquoi maintenant : trois colonnes séparées par des filets ===== */
-  .cards{display:grid;grid-template-columns:repeat(3,1fr)}
-  .cards article{padding:4px 45px 0 0;margin-right:45px;border-right:1px solid var(--filet)}
-  .cards article:last-child{border:0;margin-right:0}
-  .cards .glyphe{font:500 26px Jost,sans-serif;color:var(--accent)}
-  .cards h3{font-size:22px;margin:14px 0 10px}
-  .cards p{font-size:14px;line-height:1.7;color:var(--graphite);margin:0}
-  @media (max-width:860px){.cards{display:block}.cards article{border-right:0;border-bottom:1px solid var(--filet);margin:0;padding:20px 0}.cards article:last-child{border-bottom:0}}
-
   /* Trois époques, illustrées */
-  .epoques{margin-top:64px;padding-top:48px;border-top:1px solid var(--filet)}
-  .epoques .sous-titre{font-size:1.6rem;max-width:720px;margin-bottom:12px}
+  .epoques{padding-top:48px;border-top:1px solid var(--filet)}
   .epoques .intro{color:var(--discret);max-width:720px;font-size:15px;line-height:1.7;margin-bottom:36px}
   .eres{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
   .ere{display:flex;flex-direction:column}
@@ -203,6 +193,7 @@
   .legende-budget{margin-top:18px;color:var(--discret);font-size:13px;display:flex;align-items:center;gap:8px}
   .legende-budget i{display:inline-block;width:22px;height:6px;border-radius:3px;background:var(--accent)}
   @media (max-width:860px){.eres{grid-template-columns:1fr;gap:36px}.ere .scene{max-width:360px}}
+  @media (min-width:861px) and (max-width:1100px){.ere .point{font-size:11px;letter-spacing:.1em;white-space:nowrap}}
 
   /* ===== Expertises : grille 2 x 2 à filets ===== */
   .piliers{display:grid;grid-template-columns:1fr 1fr}
@@ -330,14 +321,7 @@
       <h2>Ce que l'IA change pour une petite organisation</h2>
       <p>Un logiciel fiable demandait du monde : des testeurs, des rédacteurs, une équipe d'exploitation. L'IA assure aujourd'hui une grande part de ce travail, à condition de savoir la mettre en place.</p>
     </div>
-    <div class="cards reveal">
-      <article><span class="glyphe">↗</span><h3>La qualité ne dépend plus de la taille</h3><p>Tests systématiques, documentation tenue à jour, relecture de chaque changement : ce niveau n'exige plus une grande équipe.</p></article>
-      <article><span class="glyphe">◎</span><h3>Il y a moins à maintenir</h3><p>Moins de code, moins d'outils empilés, des systèmes mieux documentés : la maintenance pèse moins sur vos équipes et sur votre budget.</p></article>
-      <article><span class="glyphe">◇</span><h3>L'expérience décide du résultat</h3><p>L'IA exécute ce qu'on lui demande. Savoir quoi demander et juger ce qu'elle rend suppose d'avoir dirigé des équipes d'ingénierie.</p></article>
-    </div>
-
     <div class="epoques reveal">
-      <h3 class="sous-titre">Ce qui exigeait une grande équipe ne l'exige plus.</h3>
       <div class="eres" role="list">
         <article class="ere" role="listitem">
           <span class="point">1.0 · L'ARTISANAT</span>
@@ -354,10 +338,10 @@
           <div class="budget" aria-hidden="true"><i style="--p:30%"></i></div>
         </article>
         <article class="ere actuelle" role="listitem">
-          <span class="point">3.0 · L'IA SOUS DIRECTION</span>
+          <span class="point">3.0 · DÉVELOPPEMENT ASSISTÉ PAR IA</span>
           <figure class="scene scene-3"><img src="assets/img/ere-3.webp" alt="Un de nos ingénieurs désigne le monogramme Roymata Soft, relié à six agents : spécification, développement, qualité, déploiement, exploitation, maintenance" loading="eager" decoding="async"><span class="phase" style="left:42.5%;top:24.3%">Spécification</span><span class="phase" style="left:85.1%;top:24.3%">Développement</span><span class="phase" style="left:39.9%;top:45.8%">Qualité</span><span class="phase" style="left:90.3%;top:46.8%">Déploiement</span><span class="phase" style="left:43.4%;top:68.3%">Exploitation</span><span class="phase" style="left:87.0%;top:70.2%">Maintenance</span></figure>
-          <h3>Aujourd'hui, une petite équipe expérimentée dirige le travail de l'IA.</h3>
-          <p>Elle atteint la qualité d'une grande, avec moins de coordination et moins de maintenance.</p>
+          <h3>Aujourd'hui, une petite équipe agile développe avec l'IA.</h3>
+          <p>Plus de productivité et une communication plus simple, donc plus rapide. Elle atteint la qualité d'une grande, avec moins de coordination et moins de maintenance.</p>
           <div class="budget" aria-hidden="true"><i style="--p:85%"></i></div>
         </article>
       </div>
@@ -450,9 +434,9 @@
         <ul class="convictions">
           <li><b>Expérience</b><span>25 ans dans le logiciel et les produits SaaS.</span></li>
           <li><b>Direction technique</b><span>Éditeur français de logiciels, jusqu'à la due diligence technique de son rachat par un leader américain.</span></li>
-          <li><b>Ingénierie</b><span>Directeur senior dans ce groupe américain : équipes internationales, internes et externalisées.</span></li>
+          <li><b>Ingénierie</b><span>Directeur senior dans un groupe américain : équipes internationales, internes et externalisées.</span></li>
           <li><b>Acquisition</b><span>Intégration d'une société après son rachat.</span></li>
-          <li><b>Expertise</b><span>Géospatial et cartographie numérique.</span></li>
+          <li><b>Expertise</b><span>Géospatial, BI, plateformes à haute scalabilité.</span></li>
           <li><b>Certification</b><span>« Diriger avec la Data et l'IA »<br>École polytechnique, 2026.</span></li>
         </ul>
       </div>
